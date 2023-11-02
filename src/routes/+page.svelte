@@ -103,7 +103,7 @@
 <style>
 	.grid-container {
 		display: grid;
-		grid-template-columns: auto auto auto auto;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 		gap: 1rem;
 	}
 </style>
