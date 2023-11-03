@@ -18,7 +18,7 @@
 	</p>
 </HeaderWrapper>
 <ContentWrapper>
-	<div class="row">
+	<div class="row py-5">
 		<div class="col-6">
 			<p class="lead fw-bold unbounded">
 				Find the perfect spots for your shoots right in the heart of Europe! From beautiful mountain
@@ -35,18 +35,29 @@
 		</div>
 	</div>
 	<div class="row">
-		<Card label="CZECH REPUBLIC" thumbnail="cz.jpg" last="col-md-6" />
-		<Card label="SLOVAKIA" thumbnail="sk.jpg" last="col-md-6" />
-		<Card label="AUSTRIA" thumbnail="au.jpg" />
+		<Card
+			label="CZECH REPUBLIC"
+			thumbnail="cz.jpg"
+			last="col-md-6"
+			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
+		/>
+		<Card
+			label="SLOVAKIA"
+			thumbnail="sk.jpg"
+			last="col-md-6"
+			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
+		/>
+		<Card
+			label="AUSTRIA"
+			thumbnail="au.jpg"
+			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
+		/>
 	</div>
-	<h2 class="unbounded">
-		WHAT WE OFFER AS FIXERS / LOCAL PRODUCTION SERVICE IN CZECH REPUBLIC / SLOVAKIA / AUSTRIA &
-		THROUGHOUT EUROPE
-	</h2>
-	<p class="roboto">
+	<h2 class="unbounded text-center display-4 mt-5 pt-5">WHAT WE OFFER AS FIXERS</h2>
+	<p class="roboto text-center py-4 fw-light">
 		Local production service on Czech Republic / Slovakia / Austria & throughout Europe
 	</p>
-	<div class="grid-container">
+	<div class="grid-container pb-5">
 		<ActivityBox value="HIRING HIGH QUALITY CREWS" />
 		<ActivityBox value="LOCATION SCOUTING AND RESEARCH" />
 		<ActivityBox value="LOCATION CLEARANCES AND RELEASES" />
@@ -66,12 +77,12 @@
 	</div>
 </ContentWrapper>
 <ContentWrapper blackOnWhite={true}>
-	<div class="row">
+	<div class="row py-5">
 		<div class="col-4">
 			<h2 class="unbounded">WHO WE ARE</h2>
 		</div>
 		<div class="col-8">
-			<p class="roboto">
+			<p class="roboto fw-light">
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In convallis. Fusce aliquam
 				vestibulum ipsum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam
 				dapibus fermentum ipsum. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac,
@@ -84,7 +95,7 @@
 				rerum facilis est et expedita distinctio. Etiam quis quam. Curabitur ligula sapien, pulvinar
 				a vestibulum quis, facilisis vel sapien. Pellentesque ipsum.
 			</p>
-			<p class="roboto">
+			<p class="roboto fw-light">
 				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
 				Nam sed tellus id magna elementum tincidunt. Et harum quidem rerum facilis est et expedita
 				distinctio. Aliquam erat volutpat. Curabitur ligula sapien, pulvinar a vestibulum quis,

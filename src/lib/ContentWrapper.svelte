@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="content-wrapper p-5"
+	class="content-wrapper px-5"
 	class:white-on-black={!blackOnWhite}
 	class:black-on-white={blackOnWhite}
 >

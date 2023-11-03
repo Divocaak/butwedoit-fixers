@@ -6,7 +6,6 @@
 <div class="footer-wrapper mx-5 p-5 mt-5 black-on-white">
 	<div class="row">
 		<div class="col-12 col-md-4 montserrat">
-			<p><b>Contact us!</b></p>
 			<LinkButton href="mailto:hello@butwedoit.cz" blackOnWhite={true}
 				><b>hello@europefixer.cz</b></LinkButton
 			><br />
