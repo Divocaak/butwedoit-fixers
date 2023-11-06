@@ -11,7 +11,7 @@
 <ContentWrapper blackOnWhite={true}>
 	<!-- TODO parallax effect over image and black -->
 	<div class="text-center">
-		<h2 class="unbounded display-4 my-5 pt-5 px-3 mx-md-5">OUR SERVICES</h2>
+		<h2 class="unbounded display-4 my-5 pt-5 px-3">OUR SERVICES</h2>
 	</div>
 	<!-- <div class="gal-cont px-md-5 mx-md-5"> -->
 	<div class="row">
@@ -33,6 +33,50 @@
 			</div>
 		{/each} -->
 	</div>
+</ContentWrapper>
+<ContentWrapper>
+	<div class="row">
+		<div class="col-6">
+			<h2 class="unbounded display-4">ACCESS</h2>
+			<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {data.name}</p>
+			{#each data.access as access}
+				<p class="fw-light roboto">{access}</p>
+			{/each}
+		</div>
+		<div class="col-6">
+			<div class="accordion accordion-flush" id="visaAccordion">
+				{#each data.policies as policy, i}
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-{i}">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapse-{i}"
+								aria-expanded="false"
+								aria-controls="collapse-{i}"
+							>
+								{policy.name}
+							</button>
+						</h2>
+						<div
+							id="collapse-{i}"
+							class="accordion-collapse collapse"
+							aria-labelledby="heading-{i}"
+							data-bs-parent="#visaAccordion"
+						>
+							<div class="accordion-body">
+								{policy.text}
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</div>
+</ContentWrapper>
+<ContentWrapper>
+	<h2 class="unbounded display-4">LOCATIONS</h2>
 	<Footer />
 </ContentWrapper>
 
@@ -62,16 +106,15 @@
 		}
 	}
 
-	li{
-		font-size: .5rem;
+	li {
+		font-size: 0.5rem;
 		padding: 0;
 		margin: 0;
 	}
-	
-	li span{
-		position: relative;
-		top: .2rem;
-		font-size: 1rem;
 
+	li span {
+		position: relative;
+		top: 0.2rem;
+		font-size: 1rem;
 	}
 </style>

@@ -40,18 +40,21 @@
 			thumbnail="cz.jpg"
 			last="col-md-6"
 			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
-		/>
+			id="0"
+			/>
 		<Card
 			label="SLOVAKIA"
 			thumbnail="sk.jpg"
 			last="col-md-6"
 			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
-		/>
+			id="1"
+			/>
 		<Card
 			label="AUSTRIA"
 			thumbnail="au.jpg"
 			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
-		/>
+			id="2"
+			/>
 	</div>
 	<h2 class="unbounded text-center display-4 mt-5 pt-5">WHAT WE OFFER AS FIXERS</h2>
 	<p class="roboto text-center py-4 fw-light">

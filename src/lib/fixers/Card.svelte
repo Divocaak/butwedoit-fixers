@@ -1,14 +1,14 @@
 <script>
-	export let last, label, thumbnail, desc;
-	export let onClick = () => {};
+	import { goto } from '$app/navigation';
+	export let last, label, thumbnail, desc, id;
 </script>
 
 <div
 	class="{last} col-12 p-0 videoCard"
 	tabindex="0"
 	role="button"
-	on:click={onClick}
-	on:keypress={onClick}
+	on:click={goto("/detail/" + id)}
+	on:keypress={goto("/detail/" + id)}
 >
 	<div
 		class="card-background d-none d-md-flex"
