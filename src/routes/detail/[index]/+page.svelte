@@ -49,7 +49,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="heading-{i}">
 							<button
-								class="accordion-button collapsed"
+								class="accordion-button unbounded collapsed"
 								type="button"
 								data-bs-toggle="collapse"
 								data-bs-target="#collapse-{i}"
@@ -65,7 +65,7 @@
 							aria-labelledby="heading-{i}"
 							data-bs-parent="#visaAccordion"
 						>
-							<div class="accordion-body">
+							<div class="accordion-body roboto fw-light">
 								{policy.text}
 							</div>
 						</div>
@@ -81,6 +81,19 @@
 </ContentWrapper>
 
 <style>
+	.accordion-button{
+		background-color: var(--yellow) !important;
+	}
+	
+	.accordion-collapse{
+		background-color: var(--black) !important;
+		color: var(--white) !important;
+	}
+	
+	.accordion-item{
+		border-color: var(--black) !important;
+	}
+
 	.gal-cont {
 		display: flex;
 		flex-wrap: wrap;
