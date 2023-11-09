@@ -2,6 +2,7 @@
 	import HeaderWrapper from '$lib/HeaderWrapper.svelte';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import LocationCard from '$lib/fixers/LocationCard.svelte';
 
 	// TODO add countries locations to json
 	export let data;
@@ -25,17 +26,10 @@
 				</ul>
 			</div>
 		{/each}
-		<!-- {#each imgs as galCol}
-			<div class="gal-col">
-				{#each galCol as img}
-					<img src="/images/{img}" alt={img} loading="lazy" />
-				{/each}
-			</div>
-		{/each} -->
 	</div>
 </ContentWrapper>
 <ContentWrapper>
-	<div class="row">
+	<div class="row m-5">
 		<div class="col-6">
 			<h2 class="unbounded display-4">ACCESS</h2>
 			<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {data.name}</p>
@@ -44,7 +38,7 @@
 			{/each}
 		</div>
 		<div class="col-6">
-			<div class="accordion accordion-flush" id="visaAccordion">
+			<div class="accordion" id="visaAccordion">
 				{#each data.policies as policy, i}
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="heading-{i}">
@@ -76,22 +70,47 @@
 	</div>
 </ContentWrapper>
 <ContentWrapper>
+	<!-- TODO <img src="/images/{img}" alt={img} loading="lazy" /> -->
 	<h2 class="unbounded display-4">LOCATIONS</h2>
+	<div class="row">
+
+		{#each data.locations as location}
+		<LocationCard
+		label={location.label}
+		thumbnail={location.img}
+		last="col-md-6"
+		desc={location.text}
+		/>
+		{/each}
+	</div>
+	DISCOVER MORE UNIQUE LOCATIONS WITH US! HELLO@EUROPEFIXER.COM
 	<Footer />
 </ContentWrapper>
 
 <style>
-	.accordion-button{
+	.accordion-button {
 		background-color: var(--yellow) !important;
 	}
-	
-	.accordion-collapse{
+
+	.accordion-collapse {
 		background-color: var(--black) !important;
 		color: var(--white) !important;
 	}
-	
-	.accordion-item{
+
+	.accordion-item {
 		border-color: var(--black) !important;
+		border-left: 1px solid var(--yellow) !important;
+		border-right: 1px solid var(--yellow) !important;
+	}
+
+	.accordion-item:last-of-type {
+		border-bottom: 1px solid var(--yellow) !important;
+	}
+
+	.accordion-button:focus {
+		box-shadow: none !important;
+		background-color: var(--white) !important;
+		color: var(--black) !important;
 	}
 
 	.gal-cont {

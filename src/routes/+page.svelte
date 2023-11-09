@@ -3,8 +3,8 @@
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import LinkButton from '$lib/LinkButton.svelte';
-	import ActivityBox from '../lib/fixers/ActivityBox.svelte';
-	import Card from '../lib/fixers/Card.svelte';
+	import ActivityBox from '$lib//fixers/ActivityBox.svelte';
+	import Card from '$lib//fixers/Card.svelte';
 </script>
 
 <svelte:head>
@@ -17,6 +17,11 @@
 		Check out our <LinkButton href="#reels" yellow={true}>vertical videos</LinkButton> too!
 	</p>
 </HeaderWrapper>
+<ContentWrapper blackOnWhite={true}>
+	<img src="countries/Poland.svg" />
+	<img src="countries/Czechia.svg" />
+	<img src="countries/crimea_disputed.svg" />
+</ContentWrapper>
 <ContentWrapper>
 	<div class="row py-5">
 		<div class="col-6">
@@ -41,20 +46,20 @@
 			last="col-md-6"
 			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
 			id="0"
-			/>
+		/>
 		<Card
 			label="SLOVAKIA"
 			thumbnail="sk.jpg"
 			last="col-md-6"
 			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
 			id="1"
-			/>
+		/>
 		<Card
 			label="AUSTRIA"
 			thumbnail="au.jpg"
 			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
 			id="2"
-			/>
+		/>
 	</div>
 	<h2 class="unbounded text-center display-4 mt-5 pt-5">WHAT WE OFFER AS FIXERS</h2>
 	<p class="roboto text-center py-4 fw-light">
