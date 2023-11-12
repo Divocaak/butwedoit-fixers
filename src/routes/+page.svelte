@@ -6,7 +6,6 @@
 	import ActivityBox from '$lib//fixers/ActivityBox.svelte';
 	import Card from '$lib//fixers/Card.svelte';
 </script>
-
 <svelte:head>
 	<!-- TODO title -->
 	<title>VIDEO / COMMERCIAL / EDITORIAL / FILM</title>
@@ -18,9 +17,19 @@
 	</p>
 </HeaderWrapper>
 <ContentWrapper blackOnWhite={true}>
-	<img src="countries/Poland.svg" />
-	<img src="countries/Czechia.svg" />
-	<img src="countries/crimea_disputed.svg" />
+	<div class="map-parent">
+		<img src="countries/portugal.svg" class="country" style="top:500px"/>
+		<img src="countries/spain.svg" class="country" style="left:-91px;top:384px"/>
+		<img src="countries/france.svg" class="country" style="left:2px;top:220px"/>
+		<img src="countries/belgium.svg" class="country" style="left:279px;top:362px"/>
+		<img src="countries/netherlands.svg" class="country" style="left:291px;top:298px"/>
+		<img src="countries/luxemburg.svg" class="country" style="left:364px;top:422px"/>
+		<img src="countries/germany.svg" class="country" style="left:268px;top:167px"/>
+		<img src="countries/switzerland.svg" class="country" style="left:311px;top:459px"/>
+		<img src="countries/italy.svg" class="country" style="left:211px;top:321px"/>
+		<img src="countries/austria.svg" class="country" style="left:337px;top:413px"/>
+		<img src="countries/czechia.svg" class="country" style="left:393px;top:365px"/>
+	</div>
 </ContentWrapper>
 <ContentWrapper>
 	<div class="row py-5">
@@ -120,6 +129,24 @@
 </ContentWrapper>
 
 <style>
+	.map-parent {
+		background-color: cyan;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		transform: scale(1.5);
+	}
+
+	.country{
+		background-color: rgba(255, 0, 0, 0.5);
+		position: absolute;
+		transform: scale(.4);
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
