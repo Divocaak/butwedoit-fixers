@@ -7,13 +7,9 @@
 
 <div class="header-wrapper" class:fixed={!hideMedia}>
 	{#if !hideMedia}
-		<img src={imagePath} alt="thumbnail" class="img-fluid"/>
+		<img src={imagePath} alt="thumbnail" class="img-fluid" />
 	{/if}
-	<div
-		class="header-overlay p-4"
-		class:background={hideMedia}
-		class:fixed={!hideMedia}
-	>
+	<div class="header-overlay p-4" class:background={hideMedia} class:fixed={!hideMedia}>
 		<Navbar />
 		{#if !hideMedia}
 			<div class="overlay-content d-flex align-items-center">
@@ -54,7 +50,7 @@
 	}
 
 	.background {
-		background-color: var(--yellow) !important;
+		background-color: var(--black) !important;
 		color: var(--black) !important;
 	}
 

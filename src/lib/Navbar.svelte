@@ -12,6 +12,8 @@
 
 <style>
 	#overlay-navbar {
+		position: relative;
+		z-index: 2;
 		height: 10%;
 	}
 
@@ -19,7 +21,7 @@
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-image: url('/logo.png');
+		background-image: url('/logo_bwd.png');
 		position: relative;
 		top: 1vh;
 		left: 1vw;
