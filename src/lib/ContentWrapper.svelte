@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="content-wrapper px-5"
+	class="content-wrapper px-md-5"
 	class:white-on-black={!blackOnWhite}
 	class:black-on-white={blackOnWhite}
 	class:gradient-background={gradient}

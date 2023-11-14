@@ -13,7 +13,7 @@
 </svelte:head>
 
 <HeaderWrapper hideMedia={true}>
-	<MapWidget top={-225} left={500} />
+	<MapWidget/>
 	<div class="map-overlay-container mx-5">
 		<h2 class="display-4 unbounded">CENTRAL EU</h2>
 		<h1 class="display-1 unbounded fw-bold pt-3 pb-4">LOCAL<br />FIXER</h1>
@@ -25,15 +25,15 @@
 	</div>
 </HeaderWrapper>
 <ContentWrapper gradient={true}>
-	<div class="row mt-5 py-5" id="info">
-		<div class="col-6">
+	<div class="row mt-5 py-5 px-3 px-md-0" id="info">
+		<div class="col-md-6 col-12">
 			<p class="lead fw-bold unbounded">
 				Find the perfect spots for your shoots right in the heart of Europe! From beautiful mountain
 				peaks, to green valleys, fairylike chateaux and castles, historical towns, industrial
 				complexes or contemporary architecture, all just a quick drive from each other.
 			</p>
 		</div>
-		<div class="col-6 roboto">
+		<div class="col-md-6 col-12 roboto">
 			<p>
 				Interested? We can help you find the right locations while securing all permits, equipment,
 				services, translations and staff you might need at your shoot. Contact us and let the
@@ -67,7 +67,7 @@
 	<p class="roboto text-center py-4 fw-light">
 		Local production service on Czech Republic / Slovakia / Austria & throughout Europe
 	</p>
-	<div class="grid-container pb-5">
+	<div class="grid-container pb-5 px-3 px-md-0">
 		<ActivityBox value="HIRING HIGH QUALITY CREWS" />
 		<ActivityBox value="LOCATION SCOUTING AND RESEARCH" />
 		<ActivityBox value="LOCATION CLEARANCES AND RELEASES" />
@@ -87,11 +87,11 @@
 	</div>
 </ContentWrapper>
 <ContentWrapper blackOnWhite={true}>
-	<div class="row py-5" id="who">
-		<div class="col-4">
+	<div class="row py-5 px-3 px-md-0" id="who">
+		<div class="col-md-4 col-12">
 			<h2 class="unbounded">WHO WE ARE</h2>
 		</div>
-		<div class="col-8">
+		<div class="col-md-8 col-12">
 			<p class="roboto fw-light">
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In convallis. Fusce aliquam
 				vestibulum ipsum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam

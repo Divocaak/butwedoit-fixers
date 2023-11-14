@@ -1,10 +1,9 @@
 <script>
 	import { goto } from '$app/navigation';
-	export let top = 0;
-	export let left = 0;
 </script>
 
-<div class="map-parent" style="top:{top}px; left:{left}px;">
+<!-- BUG responsive -->
+<div class="map-parent">
 	<!-- portugal -->
 	<svg
 		class="country"
@@ -506,13 +505,33 @@
 		--grey: #171717;
 	}
 
+	/* For mobile phones (and general?)*/
 	.map-parent {
 		z-index: 1;
 		height: 100%;
 		width: 100%;
-		position: absolute;
+		position: relative;
 		padding: 0;
 		transform: scale(3);
+		top: -40vh;
+		left: 30vw;
+	}
+
+	/* minimumPixel + range * ((viewportWidth - minScreenWidth) / maxScreenWidth) */
+	/* Mobile and Tablet */
+	@media (max-width: 768px) {
+		.map-parent {
+			top: calc(16px + 2 * ((100vw - 360px) / 768));
+			left: calc(16px + 2 * ((100vw - 360px) / 768));
+		}
+	}
+	
+	/* Laptop and Desktops screens */
+	@media (min-width: 769px) {
+		.map-parent {
+			top: calc(16px + 2 * ((100vw - 769px) / 2048));
+			left: calc(16px + 2 * ((100vw - 769px) / 2048));
+		}
 	}
 
 	.country {

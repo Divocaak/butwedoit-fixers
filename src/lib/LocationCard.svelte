@@ -14,7 +14,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- TODO check mobile version -->
 	<div
 		class="card-background card-background-small d-block d-md-none"
 		style="background-image: url('/cards/{thumbnail}');"

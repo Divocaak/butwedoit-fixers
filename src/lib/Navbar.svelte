@@ -2,13 +2,16 @@
 	import LinkButton from '$lib/LinkButton.svelte';
 </script>
 
-<div id="overlay-navbar" class="d-flex flex-row align-items-center clearfix">
-	<a href="/" id="logo-container" class="float-start"><div /></a>
-	<div class="container-fluid" />
-	<LinkButton href="/#countries" classes="px-1 px-md-3">Countries&nbsp;we&nbsp;operate</LinkButton>
-	<LinkButton href="/#offer" classes="px-1 px-md-3">What&nbsp;we&nbsp;offer</LinkButton>
-	<LinkButton href="#who" classes="px-1 px-md-3">Who&nbsp;we&nbsp;are</LinkButton>
-	<LinkButton href="#contact" classes="px-1 px-md-3">Contact</LinkButton>
+<div id="overlay-navbar" class="row d-flex flex-row align-items-center">
+	<div class="col-5"><a href="/" id="logo-container" class="float-start"><div /></a></div>
+	<div class="col-7">
+		<div class="row">
+			<div class="col"><LinkButton href="/#countries" classes="px-1 px-md-3">Countries&nbsp;we&nbsp;operate</LinkButton></div>
+			<div class="col"><LinkButton href="/#offer" classes="px-1 px-md-3">What&nbsp;we&nbsp;offer</LinkButton></div>
+			<div class="col"><LinkButton href="#who" classes="px-1 px-md-3">Who&nbsp;we&nbsp;are</LinkButton></div>
+			<div class="col"><LinkButton href="#contact" classes="px-1 px-md-3">Contact</LinkButton></div>
+		</div>
+	</div>
 </div>
 
 <style>

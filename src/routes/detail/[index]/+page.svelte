@@ -16,9 +16,9 @@
 	<div class="text-center">
 		<h2 class="unbounded display-4 my-5 pt-5 px-3">OUR SERVICES</h2>
 	</div>
-	<div class="row">
+	<div class="row px-3 px-md-0">
 		{#each data.services as service}
-			<div class="col-3">
+			<div class="col-md-3 col-6">
 				<h4>{service.label}</h4>
 				<ul class="ps-2">
 					{#each service.values as value}
@@ -30,15 +30,15 @@
 	</div>
 </ContentWrapper>
 <ContentWrapper>
-	<div class="row m-5">
-		<div class="col-6">
+	<div class="row px-3 px-md-0 mt-5">
+		<div class="col-md-6 col-12">
 			<h2 class="unbounded display-4">ACCESS</h2>
 			<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {data.name}</p>
 			{#each data.access as access}
 				<p class="fw-light roboto">{access}</p>
 			{/each}
 		</div>
-		<div class="col-6">
+		<div class="col-md-6 col-12">
 			<div class="accordion" id="visaAccordion">
 				{#each data.policies as policy, i}
 					<div class="accordion-item">
@@ -72,7 +72,7 @@
 </ContentWrapper>
 <ContentWrapper>
 	<h2 class="unbounded display-4">LOCATIONS</h2>
-	<div class="row">
+	<div class="row px-3 px-md-0">
 		{#each data.locations as location}
 			<LocationCard
 				label={location.label}

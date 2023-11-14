@@ -1,14 +1,18 @@
 <script>
 	import { goto } from '$app/navigation';
-	export let last, label, thumbnail, desc, id;
+	export let last = '';
+	export let label = '';
+	export let thumbnail = '';
+	export let desc = '';
+	export let id = '';
 </script>
 
 <div
 	class="{last} col-12 p-0 videoCard"
 	tabindex="0"
 	role="button"
-	on:click={goto("/detail/" + id)}
-	on:keypress={goto("/detail/" + id)}
+	on:click={goto('/detail/' + id)}
+	on:keypress={goto('/detail/' + id)}
 >
 	<div
 		class="card-background d-none d-md-flex"
@@ -21,7 +25,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- TODO check mobile version -->
 	<div
 		class="card-background card-background-small d-block d-md-none"
 		style="background-image: url('/cards/{thumbnail}');"
@@ -63,19 +66,19 @@
 	}
 
 	.card-content-holder {
-		background-color: rgba(0,0,0,.4);
+		background-color: rgba(0, 0, 0, 0.4);
 		transition: all 0.5s;
 	}
-	
-	.card-content-holder h3{
+
+	.card-content-holder h3 {
 		position: absolute;
 		width: 100%;
 		top: 45%;
 		color: var(--white);
 		transition: top 0.3s, color 0.5s;
 	}
-	
-	.card-content-holder p{
+
+	.card-content-holder p {
 		position: absolute;
 		width: 100%;
 		top: 45%;
@@ -83,18 +86,18 @@
 		color: var(--black);
 		transition: all 0.5s;
 	}
-	
+
 	.card-background:hover .card-content-holder {
 		background-color: var(--yellow);
-		opacity: .9;
-	}
-	
-	.card-background:hover .card-content-holder h3{
-		color: var(--black);
-		top:35%;
+		opacity: 0.9;
 	}
 
-	.card-background:hover .card-content-holder p{
+	.card-background:hover .card-content-holder h3 {
+		color: var(--black);
+		top: 35%;
+	}
+
+	.card-background:hover .card-content-holder p {
 		opacity: 1;
 	}
 </style>
