@@ -1,6 +1,6 @@
 <script>
-	export let blackOnWhite,
-		gradient = false;
+	export let blackOnWhite = false;
+	export let gradient = false;
 </script>
 
 <div

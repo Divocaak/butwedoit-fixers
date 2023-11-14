@@ -2,31 +2,30 @@
 	import HeaderWrapper from '$lib/HeaderWrapper.svelte';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import ActivityBox from '$lib//fixers/ActivityBox.svelte';
-	import Card from '$lib/fixers/Card.svelte';
-	import MapWidget from '$lib/fixers/MapWidget.svelte';
-	import MoreButton from '$lib/fixers/MoreButton.svelte';
+	import ActivityBox from '$lib//ActivityBox.svelte';
+	import Card from '$lib/Card.svelte';
+	import MapWidget from '$lib/MapWidget.svelte';
+	import MoreButton from '$lib/MoreButton.svelte';
 </script>
 
 <svelte:head>
-	<!-- TODO title -->
-	<title>VIDEO / COMMERCIAL / EDITORIAL / FILM</title>
+	<title>EUROPE FIXERS</title>
 </svelte:head>
 
 <HeaderWrapper hideMedia={true}>
-	<MapWidget top={-225} left={500}/>
+	<MapWidget top={-225} left={500} />
 	<div class="map-overlay-container mx-5">
 		<h2 class="display-4 unbounded">CENTRAL EU</h2>
-		<h1 class="display-1 unbounded fw-bold pt-3 pb-4">LOCAL<br>FIXER</h1>
-		<MoreButton></MoreButton>
+		<h1 class="display-1 unbounded fw-bold pt-3 pb-4">LOCAL<br />FIXER</h1>
+		<MoreButton />
 	</div>
 	<div class="powered-by-container">
 		<p class="unbounded lead me-3">POWERED BY</p>
-		<img alt="butwedoit logo" src="/logo_bwd.png">
+		<img alt="butwedoit logo" src="/logo_bwd.png" />
 	</div>
 </HeaderWrapper>
 <ContentWrapper gradient={true}>
-	<div class="row mt-5 py-5">
+	<div class="row mt-5 py-5" id="info">
 		<div class="col-6">
 			<p class="lead fw-bold unbounded">
 				Find the perfect spots for your shoots right in the heart of Europe! From beautiful mountain
@@ -42,7 +41,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row" id="countries">
 		<Card
 			label="CZECH REPUBLIC"
 			thumbnail="cz.jpg"
@@ -64,7 +63,7 @@
 			id="2"
 		/>
 	</div>
-	<h2 class="unbounded text-center display-4 mt-5 pt-5">WHAT WE OFFER AS FIXERS</h2>
+	<h2 class="unbounded text-center display-4 mt-5 pt-5" id="offer">WHAT WE OFFER AS FIXERS</h2>
 	<p class="roboto text-center py-4 fw-light">
 		Local production service on Czech Republic / Slovakia / Austria & throughout Europe
 	</p>
@@ -88,7 +87,7 @@
 	</div>
 </ContentWrapper>
 <ContentWrapper blackOnWhite={true}>
-	<div class="row py-5">
+	<div class="row py-5" id="who">
 		<div class="col-4">
 			<h2 class="unbounded">WHO WE ARE</h2>
 		</div>
@@ -119,6 +118,7 @@
 			</p>
 		</div>
 	</div>
+	<div id="contact" />
 	<Footer />
 </ContentWrapper>
 
@@ -129,14 +129,14 @@
 		gap: 1rem;
 	}
 
-	.map-overlay-container{
+	.map-overlay-container {
 		position: absolute;
 		z-index: 2;
 		color: var(--white);
 		top: 200px;
 	}
 
-	.powered-by-container{
+	.powered-by-container {
 		position: absolute;
 		z-index: 2;
 		color: var(--white);
@@ -144,14 +144,13 @@
 		right: 70px;
 	}
 
-	.powered-by-container p{
+	.powered-by-container p {
 		display: inline-block;
 	}
-	
-	.powered-by-container img{
+
+	.powered-by-container img {
 		display: inline-block;
 		height: 100px;
 		width: auto;
 	}
-
 </style>

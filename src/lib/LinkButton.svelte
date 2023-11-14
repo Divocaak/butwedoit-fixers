@@ -1,7 +1,8 @@
 <script>
-	export let href
-	export let classes=null;
-    export let blackOnWhite, yellow=false;
+	export let href;
+	export let classes = null;
+	export let blackOnWhite = false;
+	export let yellow = false;
 </script>
 
 <a {href} class={classes} class:black-on-white={blackOnWhite} class:yellow-base={yellow}>
@@ -26,7 +27,7 @@
 		--_p: 100%;
 	}
 
-	.black-on-white{
+	.black-on-white {
 		color: var(--black);
 		--c: var(--black);
 	}
@@ -36,7 +37,7 @@
 		--_p: 100%;
 	}
 
-	.yellow-base{
+	.yellow-base {
 		color: var(--yellow);
 		--c: var(--yellow);
 	}

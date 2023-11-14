@@ -2,19 +2,20 @@
 	import HeaderWrapper from '$lib/HeaderWrapper.svelte';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import LocationCard from '$lib/fixers/LocationCard.svelte';
+	import LocationCard from '$lib/LocationCard.svelte';
 
-	// TODO add countries locations to json
 	export let data;
 </script>
 
-<HeaderWrapper title={data.name} imagePath="/images/thumbnails/{data.thumbnail}" />
+<svelte:head>
+	<title>{data.name}, EUROPE FIXERS</title>
+</svelte:head>
+
+<HeaderWrapper title={data.name} imagePath="/countries/{data.thumbnail}" />
 <ContentWrapper blackOnWhite={true}>
-	<!-- TODO parallax effect over image and black -->
 	<div class="text-center">
 		<h2 class="unbounded display-4 my-5 pt-5 px-3">OUR SERVICES</h2>
 	</div>
-	<!-- <div class="gal-cont px-md-5 mx-md-5"> -->
 	<div class="row">
 		{#each data.services as service}
 			<div class="col-3">
@@ -70,20 +71,23 @@
 	</div>
 </ContentWrapper>
 <ContentWrapper>
-	<!-- TODO <img src="/images/{img}" alt={img} loading="lazy" /> -->
 	<h2 class="unbounded display-4">LOCATIONS</h2>
 	<div class="row">
-
 		{#each data.locations as location}
-		<LocationCard
-		label={location.label}
-		thumbnail={location.img}
-		last="col-md-6"
-		desc={location.text}
-		/>
+			<LocationCard
+				label={location.label}
+				thumbnail={location.img}
+				last="col-md-6"
+				desc={location.text}
+			/>
 		{/each}
 	</div>
-	DISCOVER MORE UNIQUE LOCATIONS WITH US! HELLO@EUROPEFIXER.COM
+	<p class="text-center unbounded lead py-5">
+		DISCOVER MORE UNIQUE LOCATIONS WITH US! <a
+			class="email-href-subtle"
+			href="mailto:hello@europefixer.cz">HELLO@EUROPEFIXER.COM</a
+		>
+	</p>
 	<Footer />
 </ContentWrapper>
 
@@ -113,31 +117,6 @@
 		color: var(--black) !important;
 	}
 
-	.gal-cont {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 0 4px;
-	}
-
-	.gal-col {
-		flex: 33%;
-		max-width: 33%;
-		padding: 0 4px;
-	}
-
-	.gal-col img {
-		margin-top: 8px;
-		vertical-align: middle;
-		width: 100%;
-	}
-
-	@media screen and (max-width: 800px) {
-		.gal-col {
-			flex: 100%;
-			max-width: 100%;
-		}
-	}
-
 	li {
 		font-size: 0.5rem;
 		padding: 0;
@@ -148,5 +127,15 @@
 		position: relative;
 		top: 0.2rem;
 		font-size: 1rem;
+	}
+
+	.email-href-subtle {
+		color: var(--yellow);
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.email-href-subtle:hover {
+		font-size: 1.4rem;
 	}
 </style>

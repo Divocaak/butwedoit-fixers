@@ -1,13 +1,14 @@
 <script>
-	import LinkButton from "$lib/LinkButton.svelte";
+	import LinkButton from '$lib/LinkButton.svelte';
 </script>
 
-<div id="overlay-navbar" class="d-flex flex-row align-items-center">
-	<a href="/"><div id="logo"/></a>
+<div id="overlay-navbar" class="d-flex flex-row align-items-center clearfix">
+	<a href="/" id="logo-container" class="float-start"><div /></a>
 	<div class="container-fluid" />
-	<LinkButton href="/videos" classes="px-1 px-md-3">VIDEOS</LinkButton>
-	<LinkButton href="/events" classes="px-1 px-md-3">EVENTS</LinkButton>
-	<LinkButton href="/contact" classes="px-1 px-md-3">CONTACT</LinkButton>
+	<LinkButton href="/#countries" classes="px-1 px-md-3">Countries&nbsp;we&nbsp;operate</LinkButton>
+	<LinkButton href="/#offer" classes="px-1 px-md-3">What&nbsp;we&nbsp;offer</LinkButton>
+	<LinkButton href="#who" classes="px-1 px-md-3">Who&nbsp;we&nbsp;are</LinkButton>
+	<LinkButton href="#contact" classes="px-1 px-md-3">Contact</LinkButton>
 </div>
 
 <style>
@@ -17,7 +18,12 @@
 		height: 10%;
 	}
 
-	#logo {
+	#logo-container {
+		position: relative;
+		left: 0;
+	}
+
+	#logo-container div {
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;

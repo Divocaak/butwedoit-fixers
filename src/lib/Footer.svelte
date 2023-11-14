@@ -6,7 +6,7 @@
 <div class="footer-wrapper mx-5 p-5 mt-5 black-on-white">
 	<div class="row">
 		<div class="col-12 col-md-4 montserrat">
-			<LinkButton href="mailto:hello@butwedoit.cz" blackOnWhite={true}
+			<LinkButton href="mailto:hello@europefixer.cz" blackOnWhite={true}
 				><b>hello@europefixer.cz</b></LinkButton
 			><br />
 			<LinkButton href="tel:+420420721343006" blackOnWhite={true}

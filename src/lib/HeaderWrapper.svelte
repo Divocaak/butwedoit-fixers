@@ -1,8 +1,8 @@
 <script>
+	import Navbar from '$lib/Navbar.svelte';
 	export let title = '';
 	export let imagePath = null;
 	export let hideMedia = false;
-	import Navbar from '$lib/Navbar.svelte';
 </script>
 
 <div class="header-wrapper" class:fixed={!hideMedia}>

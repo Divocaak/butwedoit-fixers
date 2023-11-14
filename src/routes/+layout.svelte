@@ -20,15 +20,14 @@
 		integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
 		crossorigin="anonymous"
 	></script>
-	<!-- TODO change meta desc -->
 	<meta
 		name="description"
-		content="BUT WE DO IT is a video agency & production service company. Let Us Create Amazing Commercials & Turn Them Into Leads. Crafted Scripts, Production and Advertising for Online & TV. Covers everything from film permits and location scout services to local production support."
+		content="Interested? We can help you find the right locations while securing all permits, equipment,
+		services, translations and staff you might need at your shoot. Contact us and let the
+		production begin!"
 	/>
 </svelte:head>
-<!-- NOTE https://docs.google.com/document/d/1Ut2c5l4DWJn8IUjsVpHnYjzhRNfpnjmlBhJm33PFIlo/edit -->
-<!-- TODO delete unused widgets/components -->
-<!-- TODO compress imgs -->
+
 <slot />
 
 <style lang="scss">
@@ -59,7 +58,6 @@
 		font-family: 'Unbounded', cursive;
 	}
 
-	/* TODO is used? */
 	:global(.black-on-white) {
 		color: var(--black);
 		background-color: var(--white);

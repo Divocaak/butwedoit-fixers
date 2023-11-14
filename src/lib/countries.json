@@ -1,6 +1,7 @@
 [
     {
         "name": "CZECH REPUBLIC",
+        "thumbnail": "cz.jpg",
         "access": [
             "Unlock the cinematic magic of the Czech Republic!",
             "Czechia is renowned for its filmmaker-friendly environment. The country has a long history of nurturing generations of filmmakers, ensuring that you have access to some of the most skilled and creative professionals in the industry.",
@@ -254,6 +255,7 @@
     },
     {
         "name": "SLOVAKIA",
+        "thumbnail": "sk.jpg",
         "access": [
             "Slovakia is your cinematic playground, offering enchanting settings from snow-capped mountains to quaint villages and fairy tale castles.",
             "Whether it's a documentary, feature film, or a grand production, we've got you covered. Our skilled Slovak team is your all-in-one solution, from scouting to assembling the perfect crew. Discover a world of diverse backdrops, blending history and modernity seamlessly. Slovakia is a production-friendly country, nurturing generations of directors, fixers, DOPs and editors who are ready to help you with all your projects.",
@@ -475,6 +477,7 @@
     },
     {
         "name": "AUSTRIA",
+        "thumbnail": "au.jpg",
         "access": [
             "Austria is a filmmaker's dream! It is nestled in the heart of Europe, Austria offers a myriad of breathtaking settings, each with its own unique charm.",
             "Austria's landscapes are as diverse as they come. From the snow-capped peaks of the Austrian Alps to the rolling vineyards of Styria, and from the picturesque lakes in the Salzkammergut region to the historical treasures of Vienna, The country's seasons provide a wide range of looks, allowing you to capture the beauty of Austria in various settings throughout the year.",
