@@ -517,6 +517,7 @@
 		left: 30vw;
 	}
 
+	/* URGENT https://dev.to/promisetochi/completely-responsive-css-values-no-not-media-queries-d4l */
 	/* minimumPixel + range * ((viewportWidth - minScreenWidth) / maxScreenWidth) */
 	/* Mobile and Tablet */
 	@media (max-width: 768px) {
