@@ -1,0 +1,691 @@
+[
+    {
+        "name": "CZECH REPUBLIC",
+        "thumbnail": "cz.jpg",
+        "access": [
+            "Unlock the cinematic magic of the Czech Republic!",
+            "Czechia is renowned for its filmmaker-friendly environment. The country has a long history of nurturing generations of filmmakers, ensuring that you have access to some of the most skilled and creative professionals in the industry.",
+            "Czechia's rich history is a goldmine for cinematic storytelling. Explore the stunning medieval architecture of Prague, with its historic Old Town and Prague Castle. For filmmakers seeking a blend of history and modernity, Prague is an ideal location. The capital city seamlessly integrates its rich history with a vibrant contemporary vibe, offering filmmakers a diverse range of urban settings.",
+            "The Czech Republic boasts an incredible diversity of landscapes thanks to its rich history Czechia strategic location makes it a crossroads of cultures, with Germany, Austria, Slovakia, and Poland as its neighboring countries. This geographical advantage not only enriches Czechia's diverse heritage but also provides a gateway to other countries with a short driving distance. The country's distinct seasons allow for a wide range of looks, ensuring your production captures the beauty of Czechia in various atmospheric settings.",
+            "Whether it's a documentary, feature film, or a whole film. We have you covered. Our extensive Czech team offers covering everything from location scouts to filming crew, from camera operators to assistant directors. Discover a diverse backdrop, from historic charm to modern urban vibes."
+        ],
+        "visa": [
+            "Most film crews can enter the Czech Republic without a visa, but if they plan to stay for an extended period, a visa might be required.",
+            "The Czech Republic is part of the Schengen Area, a group of 26 European countries that allows for the free movement of labor and services. People from Schengen countries can visit the Czech Republic for up to three months without needing any special permits. However, if their stay exceeds three months, they must apply for a visa.",
+            "For citizens of the United States, Canada, Australia, the EU, and the EEA, no visa is necessary to enter the Czech Republic, and they can stay for up to three months within a six-month period without a residence permit.",
+            "Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border.",
+            "Coming from outside the EU and these countries, individual situations have to be looked upon and may apply for VISA. We can assist you with that!"
+        ],
+        "services": [
+            {
+                "label": "LOCATION & CASTING",
+                "values": [
+                    "LOCATION SCOUTING",
+                    "LOCATION RESEARCH",
+                    "LOCATION REPORTS",
+                    "LIGHT STUDIES",
+                    "LOCATION CLEARANCES",
+                    "FILM PERMITS",
+                    "MAPPING ",
+                    "FILM CASTING",
+                    "CASTING DIRECTORS",
+                    "AUDITIONS",
+                    "TALENT SELECTION",
+                    "CASTING CALLS",
+                    "ROLE CASTING"
+                ]
+            },
+            {
+                "label": "LOCAL PRODUCTION CREW",
+                "values": [
+                    "PRODUCTION ASSISTANTS",
+                    "FIXERS",
+                    "CAMERA OPERATORS",
+                    "DOP (DIRECTOR OF PHOTOGRAPHY)",
+                    "DIRECTORS",
+                    "GAFFERS",
+                    "FILMMAKERS",
+                    "RUNNERS",
+                    "COLOR GRADERS",
+                    "ASSISTANT DIRECTORS",
+                    "FOCUS PULLERS",
+                    "SOUND OPERATORS",
+                    "CERTIFIED DRONE PILOTS",
+                    "MAKE UP ARTISTS",
+                    "COSTUME/STYLISTS",
+                    "SET DESIGNERS"
+                ]
+            },
+            {
+                "label": "LOGISTICS & EQUIPMENT ",
+                "values": [
+                    "FILMING EQUIPMENT",
+                    "(CAMERA, LIGHTS, GRIP)",
+                    "TECHNICAL CREW",
+                    "DRIVERS",
+                    "ART DEPARTMENT",
+                    "SFX CREWS",
+                    "HIGH-END EQUIPMENT RENTAL",
+                    "STUDIOS",
+                    "TRANSPORTATION",
+                    "VANS/MINIBUSES",
+                    "WALKIE TALKIES",
+                    "PRODUCTION TENTS",
+                    "SPECIALIZED VEHICLES",
+                    "PRODUCTION HOUSE"
+                ]
+            },
+            {
+                "label": "PRODUCTION SUPPORT AND MANAGEMENT",
+                "values": [
+                    "TRANSLATORS",
+                    "PERMITS / PERMIT MANAGEMENT",
+                    "PRODUCTION SCHEDULING",
+                    "BUDGETING & CALL SHEETS",
+                    "FINDING TALENTS",
+                    "CATERING",
+                    "LOCAL HIRE & MANAGEMENT",
+                    "SERVICE PRODUCTION",
+                    "EMERGENCY RESPONSE",
+                    "BUDGETING & BIDDING",
+                    "INSURANCE",
+                    "ON SET SECURITY",
+                    "ACCOMMODATION",
+                    "HOTEL BOOKING",
+                    "LOCAL COORDINATION"
+                ]
+            }
+        ],
+        "policies": [
+            {
+                "name": "USA",
+                "text": "Citizens of the U.S.A. are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe."
+            },
+            {
+                "name": "CANADA",
+                "text": "Citizens of Canada are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "MEXICO",
+                "text": "Citizens of Mexico are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "AUSTRALIA",
+                "text": "Citizens of Australia and New Zeland are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "INDIA",
+                "text": "Citizens of India are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "RUSSIA",
+                "text": "Citizens of Russia are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "UK",
+                "text": "Citizens of the United Kingdom are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "AFRICA",
+                "text": "Citizens of any African country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "SOUTH AMERICA",
+                "text": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "MIDDLE EAST",
+                "text": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "ASIA",
+                "text": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "JAPAN",
+                "text": "Citizens of Japan are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "EUROPE ",
+                "text": "Citizens of Schengen countries can spend up to three months in the Czech Republic without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
+            }
+        ],
+        "locations": [
+            {
+                "label": "Prague",
+                "text": "Located at the heart of Europe, Prague shines as a premier filming destination within the Czech Republic. It boasts renowned historical sites like Prague Castle, Charles Bridge, or post-communist buildings. The city's versatility shines with its diverse array of filming locations, ranging from ancient streets and grand plazas to verdant gardens and concealed courtyards, enabling film crews to conveniently depict various settings in a relatively condensed space. Furthermore, Prague's affordability in comparison to many Western European cities makes it an attractive choice for cost-effective production.",
+                "img": ""
+            },
+            {
+                "label": "Prague Metro",
+                "text": "The Prague Metro, offers a unique blend of historic and modern aesthetics. With its distinctive Soviet-era architecture, the metro stations exude an atmospheric, retro charm. The network, consisting of three lines, features a variety of captivating settings, from the iconic Mustek Station with its grand escalators to the futuristic interior of the newer stations. ",
+                "<": ""
+            },
+            {
+                "label": "Český Krumlov",
+                "text": "Český Krumlov is a fairytale-like town with a well-preserved medieval center. The town's crown jewel is the Český Krumlov Castle, a UNESCO World Heritage site, featuring stunning architecture, gardens, and an impressive Baroque theater. The Vltava River winds through the town, offering opportunities for leisurely boat rides and scenic views.",
+                "img": ""
+            },
+            {
+                "label": "Karlovy Vary",
+                "text": "Karlovy Vary is a spa town renowned for its hot mineral springs. Visitors can sample the healing waters and experience spa treatments at elegant, historic spa houses. The town's colonnades, like the Mill Colonnade and Park Colonnade, are impressive structures, and the promenades along the Teplá River are picturesque.",
+                "img": ""
+            },
+            {
+                "label": "Brno",
+                "text": "Brno is a vibrant city with a rich cultural scene. Špilberk Castle, originally a fortress, is now a museum that provides a glimpse into the city's history. The city's historic center is a great place for leisurely strolls, with its lovely squares, churches, and cafés.",
+                "img": ""
+            },
+            {
+                "label": "Kutná Hora ",
+                "text": "Kutná Hora is famous for the Sedlec Ossuary, a small chapel adorned with human bones, creatively arranged to form intricate designs. It's a macabre but unique attraction. St. Barbara's Church is another highlight, an outstanding example of Gothic architecture.",
+                "img": ""
+            },
+            {
+                "label": "Plzeň",
+                "text": "Plzeň is the birthplace of Pilsner beer, and a visit to the Pilsner Urquell Brewery is a must for beer enthusiasts. You can take a tour to learn about the beer-making process. The historic city center features colorful buildings and a pleasant atmosphere.",
+                "img": ""
+            },
+            {
+                "label": "Ostrava",
+                "text": "Ostrava's industrial history is written in its steel mills and coal mines. The gritty, post-industrial landscapes, once the lifeblood of the region, provide a powerful and evocative setting for filmmakers looking to capture the legacy of heavy industry. These locations offer a stark, visually compelling contrast to the city's modern revitalization.",
+                "img": ""
+            },
+            {
+                "label": "České Švýcarsko ",
+                "text": "Bohemian Switzerland is a national park in the north of the country known for its stunning sandstone formations, deep canyons, and forests, providing excellent hiking opportunities.",
+                "img": ""
+            },
+            {
+                "label": "Hluboká Chateau",
+                "text": "Often called the 'Czech Windsor' because of its resemblance to the famous English castle, Neo-Gothic jewel of South Bohemia. Hluboká Castle is the ideal destination in South Bohemia for history buffs, incorrigible romantics.",
+                "img": ""
+            },
+            {
+                "label": "Karlštejn Castle",
+                "text": "A striking Gothic castle located not far from Prague, known for its picturesque setting and impressive architecture.",
+                "img": ""
+            },
+            {
+                "label": "Šumava National Park",
+                "text": "A beautiful national park in the southwest of Czechia, known for its pristine forests, lakes, and diverse wildlife.",
+                "img": ""
+            },
+            {
+                "label": "Zelená hora",
+                "text": "Explore the enchanting allure of the Church of St. John of Nepomuk at Zelená hora stands as one of the most distinctive structures in all of Europe, continuing to astound visitors from around the globe even today. This UNESCO-designated marvel, crafted by the gifted architect Jan Blažej Santini Aichel.",
+                "img": ""
+            },
+            {
+                "label": "Chyše Chateau and Brewery",
+                "text": "Venture to the castle, which inspired the renowned author Karel Čapek in his works 'Krakatit' and 'The Makropulos Case.' Delve into the palace's interiors, an exhibition paying tribute to Karel Čapek, and the extensive park grounds. And within the chateau brewery, savor beer crafted using an age-old Bohemian recipe.",
+                "img": ""
+            },
+            {
+                "label": "Pilsner Brewery",
+                "text": "Words like 'pils,' 'pilsner,' or 'pilsener' are recognized across the globe. It's the Plzeň brewery to which we owe the birth of this iconic lager. If you happen to be an enthusiast of this golden elixir, Plzeň is an absolute must-visit destination. Within the historical city gates, you'll encounter two breweries, both carrying the proud brewing tradition of the Czech lands – a heritage akin to family silver. ",
+                "img": ""
+            },
+            {
+                "label": "Mariánské Lázně",
+                "text": "Famous spa town located in the Karlovy Vary Region. It is renowned for its natural mineral springs, stunning architecture, and a rich history of spa treatments. The town boasts several beautiful colonnades where visitors can sample the healing mineral waters. The most famous colonnades are the Cross Spring Colonnade and the Rudolf Spring Colonnade, each offering a unique and picturesque setting.",
+                "img": ""
+            },
+            {
+                "label": "Veselý kopec",
+                "text": "Are you interested in immersing yourself in the serene, idyllic countryside and the tranquility of village life, reminiscent of times captured in vintage photographs? You have the opportunity to discover how people once lived in an era devoid of electricity and machinery at the open-air museum in Veselý kopec, situated near the town of Hlinsko in East Bohemia.",
+                "img": ""
+            },
+            {
+                "label": "Adršpach-Teplice Rocks",
+                "text": "Enchanting rock formations not only hold aesthetic allure but also pique one's curiosity. The Adršpach-Teplice Rocks stand out as some of the most renowned rock formations in the Czech Republic.Here, you can meander through narrow gorges, let your imagination roam freely as you observe the myriad shapes sculpted by the rocks, and even embark on a boat ride that ventures precariously close to the cliffs. Embark on a journey to these gorges and navigate through towering rock formations that reach heights of several meters.",
+                "img": ""
+            },
+            {
+                "label": "Houska castle",
+                "text": "This mysterious castle beckons visitors with a compelling legend about a portal to the netherworld and a condemned soul who was lowered into this abyss. The Hell's gateway is said to be guarded by a sinister, faceless black monk, yet its precise location remains shrouded in mystery. Some believe it resides within the local chapel, while others speculate it hides within the castle well – the interpretation depends on your own imagination. ",
+                "img": ""
+            },
+            {
+                "label": "Panská Rock",
+                "text": "This national nature monument - known as a stone organ is situated near the village of Prácheň near Kamenický Šenov. The geological formation is made of basalt columns (in pentagonal or hexagonal shapes) with mostly vertical orientation.",
+                "img": ""
+            }
+        ]
+    },
+    {
+        "name": "SLOVAKIA",
+        "thumbnail": "sk.jpg",
+        "access": [
+            "Slovakia is your cinematic playground, offering enchanting settings from snow-capped mountains to quaint villages and fairy tale castles.",
+            "Whether it's a documentary, feature film, or a grand production, we've got you covered. Our skilled Slovak team is your all-in-one solution, from scouting to assembling the perfect crew. Discover a world of diverse backdrops, blending history and modernity seamlessly. Slovakia is a production-friendly country, nurturing generations of directors, fixers, DOPs and editors who are ready to help you with all your projects.",
+            "Nestled in the heart of Europe, Slovakia offers filmmakers a captivating mix of landscapes and historical backdrops. From medieval castles to charming villages and modern cityscapes in Bratislava, Slovakia has it all. With diverse seasons, you can achieve a wide range of looks for your production. Filming in Slovakia is top-notch, with our exceptional crew and production excellence that always exceeds your expectations."
+        ],
+        "visa": [
+            "Most film crews can enter Slovakia without a visa, but if they plan to stay for an extended period, a visa might be required.",
+            "Slovakia is part of the Schengen Area, a group of 26 European countries that allows for the free movement of labor and services. People from Schengen countries can visit Slovakia for up to three months without needing any special permits. However, if their stay exceeds three months, they must apply for a visa.",
+            "For citizens of the United States, Canada, Australia, the EU, and the EEA, no visa is necessary to enter the Slovakia, and they can stay for up to three months within a six-month period without a residence permit.",
+            "Slovakia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border.",
+            "Coming from outside the EU and these countries, individual situations have to be looked upon and may apply for VISA. We can assist you with that!"
+        ],
+        "services": [
+            {
+                "label": "LOCATION  & CASTING",
+                "values": [
+                    "LOCATION SCOUTING",
+                    "LOCATION RESEARCH",
+                    "LOCATION REPORTS",
+                    "LIGHT STUDIES",
+                    "LOCATION CLEARANCES",
+                    "FILM PERMITS",
+                    "MAPPING ",
+                    "FILM CASTING",
+                    "CASTING DIRECTORS",
+                    "AUDITIONS",
+                    "TALENT SELECTION",
+                    "CASTING CALLS",
+                    "ROLE CASTING"
+                ]
+            },
+            {
+                "label": "LOCAL PRODUCTION CREW",
+                "values": [
+                    "PRODUCTION ASSISTANTS",
+                    "FIXERS",
+                    "CAMERA OPERATORS",
+                    "DOP (DIRECTOR OF PHOTOGRAPHY)",
+                    "DIRECTORS",
+                    "GAFFERS",
+                    "FILMMAKERS",
+                    "RUNNERS",
+                    "COLOR GRADERS",
+                    "ASSISTANT DIRECTORS",
+                    "FOCUS PULLERS",
+                    "SOUND OPERATORS",
+                    "CERTIFIED DRONE PILOTS",
+                    "MAKE UP ARTISTS",
+                    "COSTUME/STYLISTS",
+                    "SET DESIGNERS"
+                ]
+            },
+            {
+                "label": "LOGISTICS & EQUIPMENT ",
+                "values": [
+                    "FILMING EQUIPMENT ",
+                    "(CAMERA, LIGHTS, GRIP)",
+                    "TECHNICAL CREW",
+                    "DRIVERS",
+                    "ART DEPARTMENT",
+                    "SFX CREWS",
+                    "HIGH-END EQUIPMENT RENTAL",
+                    "STUDIOS",
+                    "TRANSPORTATION",
+                    "VANS/MINIBUSES",
+                    "WALKIE TALKIES",
+                    "PRODUCTION TENTS",
+                    "SPECIALIZED VEHICLES",
+                    "PRODUCTION HOUSE"
+                ]
+            },
+            {
+                "label": "PRODUCTION SUPPORT AND MANAGEMENT",
+                "values": [
+                    "TRANSLATORS",
+                    "PERMITS / PERMIT MANAGEMENT",
+                    "PRODUCTION SCHEDULING",
+                    "BUDGETING & CALL SHEETS",
+                    "FINDING TALENTS",
+                    "CATERING",
+                    "LOCAL HIRE & MANAGEMENT",
+                    "SERVICE PRODUCTION",
+                    "EMERGENCY RESPONSE",
+                    "BUDGETING & BIDDING",
+                    "INSURANCE",
+                    "ON SET SECURITY",
+                    "ACCOMMODATION",
+                    "HOTEL BOOKING",
+                    "LOCAL COORDINATION"
+                ]
+            }
+        ],
+        "policies": [
+            {
+                "name": "USA",
+                "text": "Citizens of the U.S.A. are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe."
+            },
+            {
+                "name": "CANADA",
+                "text": "Citizens of Canada are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "MEXICO",
+                "text": "Citizens of Mexico are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "AUSTRALIA",
+                "text": "Citizens of Australia and New Zeland are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "INDIA",
+                "text": "Citizens of India are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "RUSSIA",
+                "text": "Citizens of Russia are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "UK",
+                "text": "Citizens of the United Kingdom are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "AFRICA",
+                "text": "Citizens of any African country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "SOUTH AMERICA",
+                "text": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "MIDDLE EAST",
+                "text": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "ASIA",
+                "text": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "JAPAN",
+                "text": "Citizens of Japan are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "EUROPE ",
+                "text": "Citizens of Schengen countries can spend up to three months in Slovakia without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
+            }
+        ],
+        "locations": [
+            {
+                "label": "Betliar",
+                "text": "Betliar Manor stands as a unique and exceptionally well-preserved historical gem within Slovakia, retaining its original furnishings and collections post-1945. This architectural masterpiece draws inspiration from English rural designs, characterized by their picturesque charm. In addition to its English influences, discerning eyes can also spot subtle hints of French architectural elements. This extraordinary estate is not merely a historic relic but a living testament to the bygone eras, encapsulating a blend of design influences that offer an exceptional window into the past.",
+                "img": ""
+            },
+            {
+                "label": "High Tatras",
+                "text": "The High Tatras, situated in northern Slovakia, offer a stunning alpine landscape with rugged peaks, pristine lakes, and dense forests. The towering peaks and crystal-clear lakes, such as Štrbské Pleso and Popradské Pleso, create a breathtaking backdrop for adventure scenes. The region is a haven for hikers and outdoor enthusiasts, with well-maintained trails that wind through the Tatra National Park.",
+                "img": ""
+            },
+            {
+                "label": "Spiš Castle",
+                "text": "Spiš Castle is an imposing medieval fortress located near Spišské Podhradie. With its massive stone walls, towers, and drawbridge, the castle evokes a sense of grandeur and history. The panoramic views from its heights offer picturesque vistas of the surrounding countryside, making it an ideal location for historical and fantasy films.",
+                "img": ""
+            },
+            {
+                "label": "Bratislava",
+                "text": "Slovakia's capital city, Bratislava, is a dynamic location that combines historic charm with modern urban scenes. The Old Town features cobblestone streets, historic squares, and well-preserved architecture, while the modern part of the city provides a contrast with contemporary buildings and vibrant city life. The Danube River adds to the city's appeal, offering opportunities for waterfront scenes.",
+                "img": ""
+            },
+            {
+                "label": "Orava Castle",
+                "text": "Perched high on a hill, Orava Castle is a stunning medieval fortress that boasts a romantic and historic atmosphere. Its fairytale appearance includes turrets, courtyards, and drawbridges, making it a top choice for historical and fantasy films, as well as period dramas.",
+                "img": ""
+            },
+            {
+                "label": "Spis Castle",
+                "text": "As one of the largest castle complexes in Europe, Spis Castle is a UNESCO World Heritage site featuring a combination of Romanesque, Gothic, and Renaissance architecture. Its impressive exterior, interior chambers, and sweeping views of the surrounding region offer a versatile location for various film genres, particularly historical and fantasy settings.",
+                "img": ""
+            },
+            {
+                "label": "Slovak Paradise National Park",
+                "text": "Slovak Paradise is renowned for its striking natural beauty, including dense forests, canyons, and intricate ladders and walkways that navigate through the park. These features provide filmmakers with unique natural settings for adventure and wilderness scenes.",
+                "img": ""
+            },
+            {
+                "label": "Dobšinská Ice Cave",
+                "text": "The Dobšinská Ice Cave is the largest ice cave in Slovakia and offers an enchanting, otherworldly atmosphere with its intricate ice formations and subterranean passages. It's a fitting location for films set in frozen or mystical landscapes.",
+                "img": ""
+            },
+            {
+                "label": "Bojnice Castle",
+                "text": "Surrounded by beautifully manicured gardens, Bojnice Castle presents a romantic and enchanting backdrop for fantasy, historical, and fairytale films. Its architectural elegance, including turrets, courtyards, and charming interiors, contributes to the castle's appeal.",
+                "img": ""
+            },
+            {
+                "label": "Bardejov",
+                "text": "The well-preserved medieval town of Bardejov features historic squares, cobbled streets, and architectural treasures from centuries past. The town's ambiance makes it a prime choice for period films, offering an authentic and timeless setting.",
+                "img": ""
+            },
+            {
+                "label": "Caves of Aggtelek Karst and Slovak Karst",
+                "text": "The interconnected cave systems on the border of Slovakia and Hungary create a mysterious and intriguing underground location. The caves, featuring eerie rock formations and underground waterways, offer a unique setting for adventure and sci-fi films.",
+                "img": ""
+            },
+            {
+                "label": "Dunajec River Gorge",
+                "text": "The Dunajec River Gorge provides a stunning natural backdrop with its winding river, towering cliffs, and lush greenery. It's an ideal location for adventure scenes set in dramatic, natural landscapes.",
+                "img": ""
+            },
+            {
+                "label": "Banská Štiavnica",
+                "text": "This historic mining town offers a step back in time with its well-preserved medieval architecture. Cobblestone streets, charming squares, and mining-related structures create an authentic and visually captivating location for period films.",
+                "img": ""
+            },
+            {
+                "label": "Pribylina - village museum",
+                "text": "It showcases valuable historical structures that have been carefully moved to this location, preserving them from potential flooding. Visitors can immerse themselves in history by exploring a range of buildings, including a Renaissance chateau with opulent interiors, the mayor's residence, the town's school, as well as workshops for a tailor, wheelwright, and blacksmith, along with a fire station. Notably, the early Gothic Church of Virgin Mary stands as the museum's crowning jewel, adorned with original wall paintings.",
+                "img": ""
+            }
+        ]
+    },
+    {
+        "name": "AUSTRIA",
+        "thumbnail": "au.jpg",
+        "access": [
+            "Austria is a filmmaker's dream! It is nestled in the heart of Europe, Austria offers a myriad of breathtaking settings, each with its own unique charm.",
+            "Austria's landscapes are as diverse as they come. From the snow-capped peaks of the Austrian Alps to the rolling vineyards of Styria, and from the picturesque lakes in the Salzkammergut region to the historical treasures of Vienna, The country's seasons provide a wide range of looks, allowing you to capture the beauty of Austria in various settings throughout the year.",
+            "Austria's rich history is a cinematic goldmine. Explore the opulent halls of imperial palaces like Schönbrunn and Hofburg in Vienna. Step back in time in the medieval town of Salzburg. Discover the romantic allure of charming towns like Hallstatt, with its traditional alpine architecture. Austria's history is ever-present, offering filmmakers the perfect backdrop for historical dramas or period piece, unique mix of tradition and modern urban life.",
+            "Whether you're planning a documentary, feature film, or a grand production, Austria has everything you need to bring your vision to life. Austria boasts a talented and professional film industry, with a team of experts ready to make your vision a reality. From scouting picturesque locations to assembling the perfect crew, you'll find top-tier support to bring your project to life. Our skilled Austrian team includes directors, fixers, directors of photography (DOPs), and editors with a wealth of experience in the industry. Expect nothing less than production excellence that consistently exceeds your expectations."
+        ],
+        "visa": [
+            "Most film crews can enter Austria without a visa, but if they plan to stay for an extended period, a visa might be required.",
+            "Austria is part of the Schengen Area, a group of 26 European countries that allows for the free movement of labor and services. People from Schengen countries can visit Austria for up to three months without needing any special permits. However, if their stay exceeds three months, they must apply for a visa.",
+            "For citizens of the United States, Canada, Australia, the EU, and the EEA, no visa is necessary to enter the Slovakia, and they can stay for up to three months within a six-month period without a residence permit.",
+            "Austria is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border.",
+            "Coming from outside the EU and these countries, individual situations have to be looked upon and may apply for VISA. We can assist you with that!"
+        ],
+        "services": [
+            {
+                "label": "LOCATION  & CASTING",
+                "values": [
+                    "LOCATION SCOUTING",
+                    "LOCATION RESEARCH",
+                    "LOCATION REPORTS",
+                    "LIGHT STUDIES",
+                    "LOCATION CLEARANCES",
+                    "FILM PERMITS",
+                    "MAPPING ",
+                    "FILM CASTING",
+                    "CASTING DIRECTORS",
+                    "AUDITIONS",
+                    "TALENT SELECTION",
+                    "CASTING CALLS",
+                    "ROLE CASTING"
+                ]
+            },
+            {
+                "label": "LOCAL PRODUCTION CREW",
+                "values": [
+                    "PRODUCTION ASSISTANTS",
+                    "FIXERS",
+                    "CAMERA OPERATORS",
+                    "DOP (DIRECTOR OF PHOTOGRAPHY)",
+                    "DIRECTORS",
+                    "GAFFERS",
+                    "FILMMAKERS",
+                    "RUNNERS",
+                    "COLOR GRADERS",
+                    "ASSISTANT DIRECTORS",
+                    "FOCUS PULLERS",
+                    "SOUND OPERATORS",
+                    "CERTIFIED DRONE PILOTS",
+                    "MAKE UP ARTISTS",
+                    "COSTUME/STYLISTS",
+                    "SET DESIGNERS"
+                ]
+            },
+            {
+                "label": "LOGISTICS & EQUIPMENT ",
+                "values": [
+                    "FILMING EQUIPMENT ",
+                    "(CAMERA, LIGHTS, GRIP)",
+                    "TECHNICAL CREW",
+                    "DRIVERS",
+                    "ART DEPARTMENT",
+                    "SFX CREWS",
+                    "HIGH-END EQUIPMENT RENTAL",
+                    "STUDIOS",
+                    "TRANSPORTATION",
+                    "VANS/MINIBUSES",
+                    "WALKIE TALKIES",
+                    "PRODUCTION TENTS",
+                    "SPECIALIZED VEHICLES",
+                    "PRODUCTION HOUSE"
+                ]
+            },
+            {
+                "label": "PRODUCTION SUPPORT AND MANAGEMENT",
+                "values": [
+                    "TRANSLATORS",
+                    "PERMITS / PERMIT MANAGEMENT",
+                    "PRODUCTION SCHEDULING",
+                    "BUDGETING & CALL SHEETS",
+                    "FINDING TALENTS",
+                    "CATERING",
+                    "LOCAL HIRE & MANAGEMENT",
+                    "SERVICE PRODUCTION",
+                    "EMERGENCY RESPONSE",
+                    "BUDGETING & BIDDING",
+                    "INSURANCE",
+                    "ON SET SECURITY",
+                    "ACCOMMODATION",
+                    "HOTEL BOOKING",
+                    "LOCAL COORDINATION"
+                ]
+            }
+        ],
+        "policies": [
+            {
+                "name": "USA",
+                "text": "Citizens of the U.S.A. are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe."
+            },
+            {
+                "name": "CANADA",
+                "text": "Citizens of Canada are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "MEXICO",
+                "text": "Citizens of Mexico are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "AUSTRALIA",
+                "text": "Citizens of Australia and New Zeland are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "INDIA",
+                "text": "Citizens of India are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "RUSSIA",
+                "text": "Citizens of Russia are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "UK",
+                "text": "Citizens of the United Kingdom are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "AFRICA",
+                "text": "Citizens of any African country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "SOUTH AMERICA",
+                "text": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "MIDDLE EAST",
+                "text": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "ASIA",
+                "text": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
+            },
+            {
+                "name": "JAPAN",
+                "text": "Citizens of Japan are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
+            },
+            {
+                "name": "EUROPE ",
+                "text": "Citizens of Schengen countries can spend up to three months in Austria without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
+            }
+        ],
+        "locations": [
+            {
+                "label": "Vienna",
+                "text": "Vienna, Austria's capital, offers a treasure trove of film-worthy locations. Its historic city center showcases a rich tapestry of architectural wonders, from the opulent Hofburg Palace to St. Stephen's Cathedral. The Belvedere Palace and Gardens enchant with their Baroque beauty, while the Vienna State Opera radiates classical grandeur. The city's vibrant streets and squares, coupled with its blend of old-world charm and contemporary vitality, create a versatile backdrop for a wide range of film genres.",
+                "img": ""
+            },
+            {
+                "label": "Salzburg",
+                "text": "The picturesque city of Salzburg, with its charming old town nestled beneath the towering Hohensalzburg Fortress, exudes a unique cinematic appeal. The cobbled streets, historic buildings, and Mirabell Palace gardens have provided enchanting settings for numerous films. Additionally, the surrounding Salzkammergut region offers breathtaking lakes and mountains, immortalized by 'The Sound of Music,' making it a captivating choice for both historical and naturalistic settings.",
+                "img": ""
+            },
+            {
+                "label": "Hallstatt",
+                "text": "Hallstatt, situated on the tranquil shores of Lake Hallstatt and surrounded by the Dachstein Alps, is a cinematographer's dream. This idyllic village features charming alpine architecture and narrow lanes that wind between picturesque houses. The salt mine, an underground marvel, adds an extra layer of intrigue, making it a captivating location for mystery or adventure films with a touch of history and nature's beauty.",
+                "img": ""
+            },
+            {
+                "label": "Tyrol Region",
+                "text": "Tyrol's landscapes offer a diverse palette for filmmakers. From the picturesque city of Innsbruck, where historic architecture meets alpine majesty, to the rugged Alpine terrain that beckons for outdoor scenes and sports-based films, Tyrol presents a blend of the old and the new. The Swarovski Crystal Worlds in Wattens provide a unique, modern backdrop for more contemporary or avant-garde projects, contrasting with the region's natural beauty and historic charm.",
+                "img": ""
+            },
+            {
+                "label": "Graz",
+                "text": "Graz, Austria's second-largest city, boasts a beautifully preserved historic old town. Its maze of narrow medieval streets, Renaissance-era buildings, and Baroque facades create a picturesque setting for historical dramas. The city's iconic landmark, the Grazer Uhrturm (Graz Clock Tower), stands on Schlossberg Hill and offers breathtaking panoramic views of the city and the surrounding region, making it an ideal location for a variety of scenes.",
+                "img": ""
+            },
+            {
+                "label": "Styria Region",
+                "text": "The Styria region, particularly South Styria, is famous for its vineyards and wine regions. The rolling hills covered in vineyards and charming villages make it a perfect backdrop for romantic stories or period pieces. The Riegersburg Castle, an imposing fortress with a rich history, provides a unique setting for historical or fantasy films, and the surrounding landscapes offer diverse filming options.",
+                "img": ""
+            },
+            {
+                "label": "Schladming",
+                "text": "Schladming is a picturesque alpine town in the heart of the Dachstein region. Surrounded by majestic mountains, it's an excellent location for winter sports scenes and mountain adventures. The town's alpine architecture and cozy atmosphere create a charming ambiance for various film genres, including dramas, comedies, and thrillers.",
+                "img": ""
+            },
+            {
+                "label": "Zell am See",
+                "text": "Zell am See is nestled between the serene Lake Zell and the imposing mountains. This lakeside town offers a beautiful backdrop for scenes featuring waterfront settings, romantic stories, and outdoor activities. The combination of a tranquil lake, lush landscapes, and the nearby Hohe Tauern National Park provides a versatile environment for filmmakers to capture a range of natural beauty.",
+                "img": ""
+            },
+            {
+                "label": "Austrian Alps",
+                "text": "The Austrian Alps encompass a vast and diverse mountain range, featuring high alpine meadows, rugged peaks, and dramatic landscapes. This region is a natural choice for adventure scenes, outdoor sports, and dramatic settings. Ski resorts like Kitzbühel and St. Anton offer not only winter sports scenes but also alpine luxury and vibrant mountain town atmospheres for diverse storylines.",
+                "img": ""
+            },
+            {
+                "label": "Bregenz",
+                "text": "Bregenz is renowned for its Bregenzer Festspiele (Bregenz Festival), which takes place on a unique floating opera stage on Lake Constance. The lake and its surroundings provide a spectacular natural setting for romantic and dramatic stories, while the festival stage itself is an impressive location for large-scale performances.",
+                "img": ""
+            },
+            {
+                "label": "Hohenwerfen Castle",
+                "text": "Perched high on a hill overlooking the Salzach Valley, Hohenwerfen Castle is a well-preserved medieval fortress. Its impressive architecture and historical ambiance make it an ideal location for period pieces and historical dramas, as well as scenes requiring fortified castles.",
+                "img": ""
+            },
+            {
+                "label": "Semmering Railway",
+                "text": "The Semmering Railway is a UNESCO World Heritage site, known for its historic railway viaducts, tunnels, and stunning mountain scenery. This location offers a unique backdrop for period films, thrillers set in train tunnels, or even modern-day train journeys against a dramatic alpine backdrop.",
+                "img": ""
+            }
+        ]
+    }
+]
