@@ -5,67 +5,60 @@
 	let mapParent;
 	let mapContainer;
 
+	function transformMap() {
+		// ::before = center
+		const mapParentBefore = window.getComputedStyle(mapParent, ':before');
+		// ::after = end of visible part
+		const mapParentAfter = window.getComputedStyle(mapParent, ':after');
+
+		const mapContainerBefore = window.getComputedStyle(mapContainer, ':before');
+		const mapContainerAfter = window.getComputedStyle(mapContainer, ':after');
+
+		const mapParentBeforeLeft = parseFloat(mapParentBefore.left);
+		const mapContainerBeforeLeft = parseFloat(mapContainerBefore.left);
+		const mapParentAfterLeft = parseFloat(mapParentAfter.left);
+		const mapContainerAfterLeft = parseFloat(mapContainerAfter.left);
+
+		const mapParentBeforeTop = parseFloat(mapParentBefore.top);
+		const mapContainerBeforeTop = parseFloat(mapContainerBefore.top);
+
+		// Calculate the scaling factor
+		const mapParentWidth = mapParentAfterLeft - mapParentBeforeLeft;
+		const mapContainerWidth = mapContainerAfterLeft - mapParentBeforeLeft;
+		const scale = (mapParentWidth / mapContainerWidth) * 2;
+
+		const xOffset = mapParentBeforeLeft - mapContainerBeforeLeft;
+		const yOffset = mapParentBeforeTop - mapContainerBeforeTop;
+
+		mapContainer.style.transform = `scale(${scale}) translate(${xOffset}px, ${yOffset}px)`;
+		console.log(
+			`mapParentWidth: ${mapParentWidth},\nmapContainerWidth: ${mapContainerWidth}\nscale(${scale})\ntranslate(${xOffset}px, ${yOffset}px)`
+		);
+	}
+
 	onMount(() => {
-		let mapParentValues = {};
-		let mapContainerValues = {};
-
-		function getPseudoElementPosition(parentElement, valuesHolder) {
-			const positionPseudoElement = window.getComputedStyle(parentElement, ':before');
-			const boundingRect = parentElement.getBoundingClientRect();
-
-			if (
-				positionPseudoElement.left &&
-				positionPseudoElement.top &&
-				!isNaN(parseFloat(positionPseudoElement.left)) &&
-				!isNaN(parseFloat(positionPseudoElement.top))
-			) {
-				valuesHolder.left = boundingRect.left + parseFloat(positionPseudoElement.left);
-				valuesHolder.top = boundingRect.top + parseFloat(positionPseudoElement.top);
-			}
-		}
-
-		function getPseudoElementScale(parentElement, valuesHolder) {
-			const scalePseudoElement = window.getComputedStyle(parentElement, ':after');
-			const boundingRect = parentElement.getBoundingClientRect();
-			if (
-				scalePseudoElement.left &&
-				!isNaN(parseFloat(scalePseudoElement.left))
-			) {
-				valuesHolder.left = boundingRect.left + parseFloat(positionPseudoElement.left);;
-				valuesHolder.top = boundingRect.top + parseFloat(positionPseudoElement.top);
-				valuesHolder.scale = boundingRect.left + parseFloat(scalePseudoElement.left) - left;
-			}
-		}
-
-		function shiftMap() {
-			if (mapParentValues && mapContainerValues) {
-				const scaleValue = mapParentValues.scale / mapContainerValues.scale;
-				console.log(scaleValue);
-				mapContainer.style.transform = 'scale(' + scaleValue + ')';
-
-				mapContainer.style.left = mapParentValues.left - mapContainerValues.left + 'px';
-				mapContainer.style.top = mapParentValues.top - mapContainerValues.top + 'px';
-			}
-		}
-
-		getPseudoElementPosition(mapParent, mapParentValues);
-		getPseudoElementPosition(mapContainer, mapContainerValues);
-		shiftMap();
-
-		window.addEventListener('resize', () => {
-			getPseudoElementPosition(mapParent, mapParentValues);
-			getPseudoElementPosition(mapContainer, mapContainerValues);
-			shiftMap();
-		});
-
+		transformMap();
+		// TODO 200 ms
+		window.addEventListener('resize', debounce(transformMap, 10, false), false);
 		return () => {
-			window.removeEventListener('resize', () => {
-				getPseudoElementPosition(mapParent, mapParentValues);
-				getPseudoElementPosition(mapContainer, mapContainerValues);
-				shiftMap();
-			});
+			window.removeEventListener('resize', transformMap);
 		};
 	});
+
+	function debounce(func, delay) {
+		let timeoutId;
+
+		return function () {
+			const context = this;
+			const args = arguments;
+
+			clearTimeout(timeoutId);
+
+			timeoutId = setTimeout(function () {
+				func.apply(context, args);
+			}, delay);
+		};
+	}
 </script>
 
 <!-- BUG responsive -->
