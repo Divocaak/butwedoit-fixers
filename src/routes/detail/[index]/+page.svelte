@@ -3,6 +3,7 @@
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import LocationCard from '$lib/LocationCard.svelte';
+	import AccessMap from '$lib/maps/AccessMap.svelte';
 
 	export let data;
 </script>
@@ -39,7 +40,8 @@
 			{/each}
 		</div>
 		<div class="col-md-6 col-12">
-			<div class="accordion" id="visaAccordion">
+			<AccessMap />
+			<!-- <div class="accordion" id="visaAccordion">
 				{#each data.policies as policy, i}
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="heading-{i}">
@@ -66,7 +68,7 @@
 						</div>
 					</div>
 				{/each}
-			</div>
+			</div> -->
 		</div>
 	</div>
 </ContentWrapper>

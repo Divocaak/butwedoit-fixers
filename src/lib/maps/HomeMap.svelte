@@ -22,24 +22,19 @@
 		const mapParentBeforeTop = parseFloat(mapParentBefore.top);
 		const mapContainerBeforeTop = parseFloat(mapContainerBefore.top);
 
-		// Calculate the scaling factor
 		const mapParentWidth = mapParentAfterLeft - mapParentBeforeLeft;
-		const mapContainerWidth = mapContainerAfterLeft - mapParentBeforeLeft;
-		const scale = (mapParentWidth / mapContainerWidth) * 2;
+		const mapContainerWidth = mapContainerAfterLeft - mapContainerBeforeLeft;
+		const scale = mapParentWidth / mapContainerWidth;
 
 		const xOffset = mapParentBeforeLeft - mapContainerBeforeLeft;
 		const yOffset = mapParentBeforeTop - mapContainerBeforeTop;
 
 		mapContainer.style.transform = `scale(${scale}) translate(${xOffset}px, ${yOffset}px)`;
-		console.log(
-			`mapParentWidth: ${mapParentWidth},\nmapContainerWidth: ${mapContainerWidth}\nscale(${scale})\ntranslate(${xOffset}px, ${yOffset}px)`
-		);
 	}
 
 	onMount(() => {
 		transformMap();
-		// TODO 200 ms
-		window.addEventListener('resize', debounce(transformMap, 10, false), false);
+		window.addEventListener('resize', debounce(transformMap, 200, false), false);
 		return () => {
 			window.removeEventListener('resize', transformMap);
 		};
@@ -61,7 +56,6 @@
 	}
 </script>
 
-<!-- BUG responsive -->
 <div class="map-parent" bind:this={mapParent}>
 	<div class="map-container" bind:this={mapContainer}>
 		<!-- portugal -->
@@ -562,41 +556,28 @@
 </div>
 
 <style>
-	:root {
-		--grey: #171717;
-	}
-
 	.map-parent {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-color: slateblue;
 	}
 
 	/* position anchor point */
 	.map-parent::before {
 		content: '';
 		position: absolute;
-		width: 10px;
-		height: 10px;
-		background-color: blue;
 		top: 50vh;
 		left: 50vw;
-		z-index: 2;
 	}
 
-	/* scale */
+	/* scale point */
 	.map-parent::after {
 		content: '';
 		position: absolute;
-		width: 10px;
-		height: 10px;
-		background-color: cyan;
 		top: 50vh;
 		right: 5vw;
-		z-index: 2;
 	}
 
 	.map-container {
@@ -610,24 +591,16 @@
 	.map-container::before {
 		content: '';
 		position: absolute;
-		width: 10px;
-		height: 10px;
-		background-color: red;
 		top: 490px;
 		left: 540px;
-		z-index: 2;
 	}
 
 	/* scale point */
 	.map-container::after {
 		content: '';
 		position: absolute;
-		width: 10px;
-		height: 10px;
-		background-color: purple;
 		top: 490px;
 		left: 670px;
-		z-index: 2;
 	}
 
 	.country {

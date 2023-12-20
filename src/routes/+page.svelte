@@ -4,7 +4,7 @@
 	import Footer from '$lib/Footer.svelte';
 	import ActivityBox from '$lib//ActivityBox.svelte';
 	import Card from '$lib/Card.svelte';
-	import MapWidget from '$lib/MapWidget.svelte';
+	import HomeMap from '$lib/maps/HomeMap.svelte';
 	import MoreButton from '$lib/MoreButton.svelte';
 </script>
 
@@ -13,7 +13,7 @@
 </svelte:head>
 
 <HeaderWrapper hideMedia={true}>
-	<MapWidget />
+	<HomeMap />
 	<div class="map-overlay-container mx-5">
 		<h2 class="display-4 unbounded">CENTRAL EU</h2>
 		<h1 class="display-1 unbounded fw-bold pt-3 pb-4">LOCAL<br />FIXER</h1>
