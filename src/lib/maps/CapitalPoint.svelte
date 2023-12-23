@@ -1,16 +1,21 @@
 <script>
-	export let title, top, left;
+	export let title, top, left, canvasFunction;
 	export let hidden = false;
+	export let test = false;
+
+	let element;
 </script>
 
-<div class="capital-wrapper" style="top:{top}px; left:{left}px" class:hidden>
+<!-- TODO warning -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<div class="capital-wrapper" style="top:{top}px; left:{left}px" class:hidden bind:this={element}>
 	<p class="unbounded capital-title">{title}</p>
-	<div class="point" />
+	<div class="point" on:mouseup={() => canvasFunction(element)} class:test />
 </div>
 
 <style>
 	.capital-wrapper {
-		position: relative;
+		position: absolute;
 		width: fit-content;
 		pointer-events: none;
 	}
@@ -46,5 +51,9 @@
 	.hidden {
 		opacity: 0 !important;
 		pointer-events: none !important;
+	}
+
+	.test{
+		background-color: red;
 	}
 </style>
