@@ -6,19 +6,20 @@
 	import AccessMap from '$lib/maps/AccessMap.svelte';
 
 	export let data;
+	const countryData = data.countryData;
 </script>
 
 <svelte:head>
-	<title>{data.name}, EUROPE FIXERS</title>
+	<title>{countryData.name}, EUROPE FIXERS</title>
 </svelte:head>
 
-<HeaderWrapper title={data.name} imagePath="/countries/{data.thumbnail}" />
+<HeaderWrapper title={countryData.name} imagePath="/countries/{countryData.thumbnail}" />
 <ContentWrapper blackOnWhite={true}>
 	<div class="text-center">
 		<h2 class="unbounded display-4 my-5 pt-5 px-3">OUR SERVICES</h2>
 	</div>
 	<div class="row px-3 px-md-0">
-		{#each data.services as service}
+		{#each countryData.services as service}
 			<div class="col-md-3 col-6">
 				<h4>{service.label}</h4>
 				<ul class="ps-2">
@@ -34,13 +35,13 @@
 	<div class="row px-3 px-md-0 mt-5">
 		<div class="col-md-6 col-12">
 			<h2 class="unbounded display-4">ACCESS</h2>
-			<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {data.name}</p>
-			{#each data.access as access}
+			<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {countryData.name}</p>
+			{#each countryData.access as access}
 				<p class="fw-light roboto">{access}</p>
 			{/each}
 		</div>
 		<div class="col-md-6 col-12">
-			<AccessMap />
+			<AccessMap selectedId={data.id}/>
 			<!-- <div class="accordion" id="visaAccordion">
 				{#each data.policies as policy, i}
 					<div class="accordion-item">
@@ -75,7 +76,7 @@
 <ContentWrapper>
 	<h2 class="unbounded display-4">LOCATIONS</h2>
 	<div class="row px-3 px-md-0">
-		{#each data.locations as location}
+		{#each countryData.locations as location}
 			<LocationCard
 				label={location.label}
 				thumbnail={location.img}
