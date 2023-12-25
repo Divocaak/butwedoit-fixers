@@ -1,16 +1,15 @@
 <script>
 	export let title, top, left, canvasFunction;
 	export let hidden = false;
-	export let test = false;
 
 	let element;
 </script>
 
 <!-- TODO warning -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="capital-wrapper" style="top:{top}px; left:{left}px" class:hidden bind:this={element}>
+<div class="capital-wrapper" style="top:{top}px; left:{left}px" class:hidden>
 	<p class="unbounded capital-title">{title}</p>
-	<div class="point" on:mouseup={() => canvasFunction(element)} class:test />
+	<div class="point" bind:this={element} on:mouseup={() => canvasFunction(element)} />
 </div>
 
 <style>
@@ -23,13 +22,13 @@
 	.point {
 		position: relative;
 		left: 50%;
-		width: 7.5px;
-		height: 7.5px;
+		width: 5px;
+		height: 5px;
 		border-radius: 50%;
 		background-color: var(--yellow);
-		-webkit-box-shadow: 0px 0px 0px 3.75px rgba(249, 210, 4, 0.5);
-		-moz-box-shadow: 0px 0px 0px 3.75px rgba(249, 210, 4, 0.5);
-		box-shadow: 0px 0px 0px 3.75px rgba(249, 210, 4, 0.5);
+		-webkit-box-shadow: 0px 0px 0px 2.5px rgba(249, 210, 4, 0.5);
+		-moz-box-shadow: 0px 0px 0px 2.5px rgba(249, 210, 4, 0.5);
+		box-shadow: 0px 0px 0px 2.5px rgba(249, 210, 4, 0.5);
 		z-index: 2;
 		pointer-events: all;
 	}
@@ -41,6 +40,7 @@
 		top: 0px;
 		pointer-events: none;
 		transition: all 0.15s ease-in-out;
+		font-size: 0.75rem;
 	}
 
 	.capital-wrapper:hover .capital-title {
@@ -51,9 +51,5 @@
 	.hidden {
 		opacity: 0 !important;
 		pointer-events: none !important;
-	}
-
-	.test{
-		background-color: red;
 	}
 </style>
