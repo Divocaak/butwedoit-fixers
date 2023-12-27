@@ -4,9 +4,9 @@
 	export let selectedId;
 
 	const startPositions = [
-		{ x: 435, y: 410 },
-		{ x: 485, y: 385 },
-		{ x: 450, y: 435 }
+		{ x: 335, y: 285 },
+		{ x: 385, y: 296 },
+		{ x: 350, y: 315 }
 	];
 
 	function drawCurvedLine(targetPoint) {
@@ -751,23 +751,15 @@
 		position: relative;
 		width: 100%;
 		height: 100%;
-		right: 100px;
-		bottom: 75px;
 	}
 
 	.map-container {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
 		transform: scale(0.65);
 	}
 
 	.capitals-container {
 		position: absolute;
-		top: 0;
-		left: 0;
 		width: 100%;
 		height: 100%;
 	}

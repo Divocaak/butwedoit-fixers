@@ -4,9 +4,26 @@
 	import Footer from '$lib/Footer.svelte';
 	import LocationCard from '$lib/LocationCard.svelte';
 	import AccessMap from '$lib/maps/AccessMap.svelte';
+	import { onMount } from 'svelte';
 
 	export let data;
 	const countryData = data.countryData;
+
+	let screenWidth = 0;
+
+	onMount(() => {
+		screenWidth = window.innerWidth;
+
+		const updateScreenWidth = () => {
+			screenWidth = window.innerWidth;
+		};
+
+		window.addEventListener('resize', updateScreenWidth);
+
+		return () => {
+			window.removeEventListener('resize', updateScreenWidth);
+		};
+	});
 </script>
 
 <svelte:head>
@@ -33,16 +50,33 @@
 </ContentWrapper>
 <ContentWrapper>
 	<div class="row px-3 px-md-0 mt-5">
-		<div class="col-md-6 col-12">
-			<h2 class="unbounded display-4">ACCESS</h2>
-			<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {countryData.name}</p>
-			{#each countryData.access as access}
-				<p class="fw-light roboto">{access}</p>
-			{/each}
-		</div>
-		<div class="col-md-6 col-12">
-			<AccessMap selectedId={data.id}/>
-			<!-- <div class="accordion" id="visaAccordion">
+		{#if screenWidth >= 1150}
+			<div class="col-md-6 col-12">
+				<h2 class="unbounded display-4">ACCESS</h2>
+				<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {countryData.name}</p>
+				{#each countryData.access as access}
+					<p class="fw-light roboto">{access}</p>
+				{/each}
+			</div>
+			<div class="col-md-6 col-12">
+				<AccessMap selectedId={data.id} />
+			</div>
+		{:else}
+			<div class="col-12">
+				<h2 class="unbounded display-4">ACCESS</h2>
+				<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {countryData.name}</p>
+				{#each countryData.access as access}
+					<p class="fw-light roboto">{access}</p>
+				{/each}
+			</div>
+			{#if screenWidth >= 550}
+				<div class="col-12 map-parent-small">
+					<AccessMap selectedId={data.id} />
+				</div>
+			{/if}
+		{/if}
+
+		<!-- <div class="accordion" id="visaAccordion">
 				{#each data.policies as policy, i}
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="heading-{i}">
@@ -70,7 +104,6 @@
 					</div>
 				{/each}
 			</div> -->
-		</div>
 	</div>
 </ContentWrapper>
 <ContentWrapper>
@@ -95,6 +128,10 @@
 </ContentWrapper>
 
 <style>
+	.map-parent-small {
+		min-height: 600px;
+	}
+
 	.accordion-button {
 		background-color: var(--yellow) !important;
 	}

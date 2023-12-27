@@ -7,7 +7,7 @@
 
 <!-- TODO warning -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="capital-wrapper" style="top:{top}px; left:{left}px" class:hidden>
+<div class="capital-wrapper" style="top:{top - 119}px; left:{left - 100}px" class:hidden>
 	<p class="unbounded capital-title">{title}</p>
 	<div class="point" bind:this={element} on:mouseup={() => canvasFunction(element)} />
 </div>
