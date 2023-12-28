@@ -743,10 +743,6 @@
 </div>
 
 <style>
-	:root {
-		--grey: #171717;
-	}
-
 	.map-parent {
 		position: relative;
 		width: 100%;

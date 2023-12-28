@@ -4,6 +4,7 @@
 	import Footer from '$lib/Footer.svelte';
 	import LocationCard from '$lib/LocationCard.svelte';
 	import AccessMap from '$lib/maps/AccessMap.svelte';
+	import VisaMap from '$lib/maps/VisaMap.svelte';
 	import { onMount } from 'svelte';
 
 	export let data;
@@ -75,36 +76,50 @@
 				</div>
 			{/if}
 		{/if}
-
-		<!-- <div class="accordion" id="visaAccordion">
-				{#each data.policies as policy, i}
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="heading-{i}">
-							<button
-								class="accordion-button unbounded collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapse-{i}"
-								aria-expanded="false"
-								aria-controls="collapse-{i}"
-							>
-								{policy.name}
-							</button>
-						</h2>
-						<div
-							id="collapse-{i}"
-							class="accordion-collapse collapse"
-							aria-labelledby="heading-{i}"
-							data-bs-parent="#visaAccordion"
-						>
-							<div class="accordion-body roboto fw-light">
-								{policy.text}
-							</div>
-						</div>
-					</div>
-				{/each}
-			</div> -->
 	</div>
+</ContentWrapper>
+<ContentWrapper>
+	<div>
+		<h2 class="unbounded display-4">ACCESS</h2>
+		<VisaMap />
+		<div class="row">
+			<div class="col-md-6 col-12">
+				<p class="fw-light roboto">{countryData.visa[0]}</p>
+			</div>
+			<div class="col-md-6 col-12">
+				<p class="fw-light roboto">{countryData.visa[1]}</p>
+				<p class="fw-light roboto">{countryData.visa[2]}</p>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="accordion" id="visaAccordion">
+		{#each countryData.policies as policy, i}
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="heading-{i}">
+					<button
+						class="accordion-button unbounded collapsed"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#collapse-{i}"
+						aria-expanded="false"
+						aria-controls="collapse-{i}"
+					>
+						{policy.name}
+					</button>
+				</h2>
+				<div
+					id="collapse-{i}"
+					class="accordion-collapse collapse"
+					aria-labelledby="heading-{i}"
+					data-bs-parent="#visaAccordion"
+				>
+					<div class="accordion-body roboto fw-light">
+						{policy.text}
+					</div>
+				</div>
+			</div>
+		{/each}
+	</div> -->
 </ContentWrapper>
 <ContentWrapper>
 	<h2 class="unbounded display-4">LOCATIONS</h2>
