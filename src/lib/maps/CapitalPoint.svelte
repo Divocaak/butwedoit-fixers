@@ -2,6 +2,8 @@
 	export let title, top, left, canvasFunction;
 	export let hidden = false;
 
+	/* TODO stay in hover after click */
+
 	let element;
 </script>
 

@@ -13,6 +13,7 @@
 </svelte:head>
 
 <HeaderWrapper hideMedia={true}>
+	<!-- BUG texts and btns pointer events -->
 	<HomeMap />
 	<div class="map-overlay-container mx-5">
 		<h2 class="display-4 unbounded">CENTRAL EU</h2>

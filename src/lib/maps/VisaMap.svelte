@@ -73,24 +73,36 @@
 
 <div class="map-parent" bind:this={mapParent}>
 	<div class="map-container" bind:this={mapContainer}>
-		<VancataSvgWrapper label="Russia" labelTop={0} labelLeft={0}><Russia /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Africa" labelTop={0} labelLeft={0}><Africa /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Asia" labelTop={0} labelLeft={0}><Asia /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Australia" labelTop={0} labelLeft={0}><Australia /></VancataSvgWrapper
+		<VancataSvgWrapper label="Russia" labelTop={40} labelLeft={70}><Russia /></VancataSvgWrapper>
+		<VancataSvgWrapper label="Africa" labelTop={60} labelLeft={50}><Africa /></VancataSvgWrapper>
+		<VancataSvgWrapper label="Asia" labelTop={51} labelLeft={70}><Asia /></VancataSvgWrapper>
+		<VancataSvgWrapper label="Australia" labelTop={69.5} labelLeft={78}
+			><Australia /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="Canada" labelTop={0} labelLeft={0}><Canada /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Europe" labelTop={0} labelLeft={0}><Europe /></VancataSvgWrapper>
-		<VancataSvgWrapper label="India" labelTop={0} labelLeft={0}><India /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Japan" labelTop={0} labelLeft={0}><Japan /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Mexico" labelTop={0} labelLeft={0}><Mexico /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Middle East" labelTop={0} labelLeft={0}
-			><MiddleEast /></VancataSvgWrapper
+		<VancataSvgWrapper label="Canada" labelTop={42} labelLeft={13}><Canada /></VancataSvgWrapper>
+		<VancataSvgWrapper label="Europe" labelTop={47.5} labelLeft={48}><Europe /></VancataSvgWrapper>
+		<VancataSvgWrapper label="India" labelTop={59} labelLeft={68.6} labelInverted={true}
+			><India /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="South America" labelTop={0} labelLeft={0}
+		<VancataSvgWrapper label="Japan" labelTop={51} labelLeft={85} labelInverted={true}
+			><Japan /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper label="Mexico" labelTop={59} labelLeft={17} labelInverted={true}
+			><Mexico /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper
+			label="Middle"
+			labelLine="East"
+			labelTop={52.8}
+			labelLeft={56.6}><MiddleEast /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper label="South" labelLine="America" labelTop={63} labelLeft={28}
 			><SouthAmerica /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="UK" labelTop={0} labelLeft={0}><UnitedKingdom /></VancataSvgWrapper>
-		<VancataSvgWrapper label="USA" labelTop={0} labelLeft={0}><UnitedStates /></VancataSvgWrapper>
+		<VancataSvgWrapper label="UK" labelTop={44.5} labelLeft={43} labelInverted={true}
+			><UnitedKingdom /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper label="USA" labelTop={51} labelLeft={18}><UnitedStates /></VancataSvgWrapper>
 	</div>
 </div>
 

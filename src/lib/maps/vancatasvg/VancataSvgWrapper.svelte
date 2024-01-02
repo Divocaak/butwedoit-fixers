@@ -1,9 +1,11 @@
 <script>
 	export let top = 0;
 	export let left = 0;
-    export let label;
+	export let label;
+	export let labelLine = null;
 	export let labelTop = 0;
 	export let labelLeft = 0;
+	export let labelInverted = false;
 </script>
 
 <div>
@@ -17,7 +19,13 @@
 	>
 		<slot />
 	</svg>
-	<p class="label unbounded" style="top:{labelTop}px; left:{labelLeft}px;">{label}</p>
+	<div class="label unbounded" class:labelInverted style="top:{labelTop}px; left:{labelLeft}px;">
+		<p>
+			{label}{#if labelLine}
+				<br />{labelLine}
+			{/if}
+		</p>
+	</div>
 </div>
 
 <style>
@@ -44,15 +52,26 @@
 
 	.country:hover {
 		fill: var(--yellow);
-        stroke: var(--yellow);
-        stroke-width: .2rem;
+		stroke: var(--yellow);
+		stroke-width: 0.2rem;
 	}
 
-    .label{
+    .country:hover ~ .label{
+        opacity: 1;
+    }
+    
+	.label {
         position: absolute;
-        top: 10px;
-        left: 0px;
-        font-size: .1rem;
-        z-index: 8;
+		font-size: 0.1rem;
+		z-index: 8;
+		pointer-events: none;
+        color: var(--black);
+        opacity: 0;
+        font-size: .08rem;
+        transition: all .35s ease-in-out;
+	}
+
+    .labelInverted{
+        color: var(--white);
     }
 </style>
