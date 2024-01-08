@@ -10,6 +10,22 @@
 	export let data;
 	const countryData = data.countryData;
 
+	const visaPolicyTranslations = {
+		usa: 'USA',
+		can: 'CANADA',
+		mex: 'MEXICO',
+		aus: 'AUSTRALIA',
+		ind: 'INDIA',
+		rus: 'RUSSIA',
+		uk: 'UNITED KINGDOM',
+		afr: 'AFRICA',
+		sam: 'SOUTH AMERICA',
+		mea: 'MIDDLE EAST',
+		asi: 'ASIA',
+		jap: 'JAPAN',
+		eur: 'EUROPE'
+	};
+
 	let screenWidth = 0;
 
 	onMount(() => {
@@ -81,8 +97,39 @@
 <ContentWrapper>
 	<div>
 		<h2 class="unbounded display-4">ACCESS</h2>
-		<VisaMap texts={countryData.policies} />
-		<div class="row">
+		{#if screenWidth >= 1150}
+			<VisaMap texts={countryData.policies} />
+		{:else}
+			<div class="accordion p-3" id="visaAccordion">
+				{#each Object.entries(countryData.policies) as [key, value], i}
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-{i}">
+							<button
+								class="accordion-button unbounded collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapse-{i}"
+								aria-expanded="false"
+								aria-controls="collapse-{i}"
+							>
+								{visaPolicyTranslations[key]}
+							</button>
+						</h2>
+						<div
+							id="collapse-{i}"
+							class="accordion-collapse collapse"
+							aria-labelledby="heading-{i}"
+							data-bs-parent="#visaAccordion"
+						>
+							<div class="accordion-body roboto fw-light">
+								{value}
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+		{/if}
+		<div class="row px-3 px-md-0 ">
 			<div class="col-md-6 col-12">
 				<p class="fw-light roboto">{countryData.visa[0]}</p>
 			</div>
@@ -92,43 +139,16 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="accordion" id="visaAccordion">
-		{#each countryData.policies as policy, i}
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="heading-{i}">
-					<button
-						class="accordion-button unbounded collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#collapse-{i}"
-						aria-expanded="false"
-						aria-controls="collapse-{i}"
-					>
-						{policy.name}
-					</button>
-				</h2>
-				<div
-					id="collapse-{i}"
-					class="accordion-collapse collapse"
-					aria-labelledby="heading-{i}"
-					data-bs-parent="#visaAccordion"
-				>
-					<div class="accordion-body roboto fw-light">
-						{policy.text}
-					</div>
-				</div>
-			</div>
-		{/each}
-	</div> -->
 </ContentWrapper>
 <ContentWrapper>
 	<h2 class="unbounded display-4">LOCATIONS</h2>
 	<div class="row px-3 px-md-0">
-		{#each countryData.locations as location}
+		{#each countryData.locations as location, i}
 			<LocationCard
 				label={location.label}
 				thumbnail={location.img}
-				last="col-md-6"
+				thumbnailFolder={countryData.locationParent}
+				last={i == countryData.locations.length - 1 ? "" : "col-md-6"}
 				desc={location.text}
 			/>
 		{/each}

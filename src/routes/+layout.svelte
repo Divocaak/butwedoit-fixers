@@ -36,7 +36,7 @@
 		--white: white;
 		--yellow: #f9d204;
 		--grey: #171717;
-		
+		--light-grey: #767676;
 	}
 
 	:global(html) {

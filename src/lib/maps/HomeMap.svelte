@@ -568,8 +568,8 @@
 	.map-parent::before {
 		content: '';
 		position: absolute;
-		top: 50vh;
-		left: 50vw;
+		top: 52vh;
+		left: 52vw;
 	}
 
 	/* scale point */
@@ -611,7 +611,7 @@
 		margin: 0;
 
 		fill: var(--grey);
-		stroke: #767676;
+		stroke: var(--light-grey);
 		stroke-width: 0.1rem;
 		stroke-linejoin: arcs;
 		z-index: 1;

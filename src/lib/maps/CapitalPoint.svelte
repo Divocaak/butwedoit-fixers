@@ -2,16 +2,43 @@
 	export let title, top, left, canvasFunction;
 	export let hidden = false;
 
-	/* TODO stay in hover after click */
-
 	let element;
+
+	let isHovered = false;
+	let isClicked = false;
+
+	export const resetToDefault = () => {
+		isHovered = isClicked = false;
+	}
+
+	function handleMouseInOut(isMouseOver) {
+		if (!isClicked) isHovered = isMouseOver;
+	}
+
+	function handleClick() {
+		isClicked = !isClicked;
+		isHovered = isClicked;
+		canvasFunction(element);
+	}
 </script>
 
-<!-- TODO warning -->
-<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="capital-wrapper" style="top:{top - 119}px; left:{left - 100}px" class:hidden>
-	<p class="unbounded capital-title">{title}</p>
-	<div class="point" bind:this={element} on:mouseup={() => canvasFunction(element)} />
+	<p
+		class="unbounded capital-title"
+		style="opacity: {isHovered || isClicked ? 1 : 0}; top: {isHovered || isClicked ? '10px' : '0'}"
+	>
+		{title}
+	</p>
+	<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+	<div
+		class="point"
+		role="button"
+		tabindex="0"
+		bind:this={element}
+		on:mouseover={() => handleMouseInOut(true)}
+		on:mouseout={() => handleMouseInOut(false)}
+		on:mouseup={handleClick}
+	/>
 </div>
 
 <style>
@@ -43,11 +70,6 @@
 		pointer-events: none;
 		transition: all 0.15s ease-in-out;
 		font-size: 0.75rem;
-	}
-
-	.capital-wrapper:hover .capital-title {
-		opacity: 1;
-		top: 10px;
 	}
 
 	.hidden {

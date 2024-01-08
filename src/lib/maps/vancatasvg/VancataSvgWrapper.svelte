@@ -7,6 +7,8 @@
 	export let labelLeft = 0;
 	export let labelInverted = false;
 	export let text = '';
+
+    const boxTop = labelTop + (labelLine != null ? 6 : 4);
 </script>
 
 <div>
@@ -27,7 +29,9 @@
 			{/if}
 		</p>
 	</div>
-	<div class="info-box" style="top:{labelTop + 2}px; left:{labelLeft - 1}px;"><p>{text}</p></div>
+    <div class="info-box-wrapper" style="top:{boxTop}px; left:{labelLeft - 1}px;">
+        <div class="info-box roboto fw-light"><p>{text}</p></div>
+    </div>
 </div>
 
 <style>
@@ -39,7 +43,7 @@
 		margin: 0;
 
 		fill: var(--grey);
-		stroke: #767676;
+		stroke: var(--light-grey);
 		stroke-width: 0.1rem;
 		stroke-linejoin: arcs;
 		z-index: 7;
@@ -53,13 +57,14 @@
 	}
 
 	.country:hover {
-		fill: var(--yellow);
-		stroke: var(--yellow);
+		fill: var(--light-grey);
 		stroke-width: 0.2rem;
 	}
 
 	.country:hover ~ .label {
 		opacity: 1;
+        /* NOTE if this color option passes by client, set color to white by default and remove the option to invert (texts in ocean) */
+        color: var(--white);
 	}
 
 	.label {
@@ -77,20 +82,42 @@
 		color: var(--white);
 	}
 
-    .country:hover ~ .info-box{
+    .country:hover ~ .info-box-wrapper{
         opacity: 1;
     }
 
-	.info-box {
-		position: absolute;
-        font-size: .1rem;
-		max-width: 40px;
-		width: max-content;
-		height: auto;
-		background-color: red;
-		z-index: 8;
-		pointer-events: none;
+    .info-box-wrapper{
+        position: absolute;
+        z-index: 8;
+        pointer-events: none;
         opacity: 0;
         transition: all .3s ease-in-out;
+    }
+
+	.info-box {
+		position: relative;
+		width: max-content;
+		height: auto;
+		max-width: 40px;
+        font-size: .1rem;
+		background-color: var(--yellow);
+        color: var(--black);
 	}
+
+    .info-box p{
+        position: relative;
+        padding: .1rem;
+        z-index: 9;
+    }
+
+    .info-box::before {
+      content: '';
+      position: absolute;
+      top: -1.5px;
+      left: 5%;
+      border-width: 0 1.5px 1.5px;
+      border-style: solid;
+      border-color: transparent transparent var(--yellow);
+      z-index: 8;
+    }
 </style>

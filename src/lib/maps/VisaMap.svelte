@@ -14,7 +14,6 @@
 	import UnitedStates from '$lib/maps/vancatasvg/UnitedStates.svelte';
 	import VancataSvgWrapper from '$lib/maps/vancatasvg/VancataSvgWrapper.svelte';
 
-	/* TODO cleanup to separate js file (redundant as its the same as HomeMap) */
 	import { onMount } from 'svelte';
 
 	export let texts = {};
@@ -73,8 +72,8 @@
 	}
 </script>
 
+<p class="roboto info-text text-end">Choose your living area to learn about visa policy rules</p>
 <div class="map-parent" bind:this={mapParent}>
-	<!-- TODO choose your living area to learn about visa policy rules -->
 	<div class="map-container" bind:this={mapContainer}>
 		<VancataSvgWrapper label="Russia" labelTop={40} labelLeft={70} text={texts.rus}
 			><Russia /></VancataSvgWrapper
@@ -186,5 +185,9 @@
 		position: absolute;
 		top: 50px;
 		left: 110px;
+	}
+
+	.info-text {
+		color: var(--light-grey);
 	}
 </style>

@@ -13,7 +13,6 @@
 </svelte:head>
 
 <HeaderWrapper hideMedia={true}>
-	<!-- BUG texts and btns pointer events -->
 	<HomeMap />
 	<div class="map-overlay-container mx-5">
 		<h2 class="display-4 unbounded">CENTRAL EU</h2>
@@ -161,6 +160,7 @@
 		z-index: 2;
 		color: var(--white);
 		top: 200px;
+		pointer-events: none;
 	}
 
 	.powered-by-container {
