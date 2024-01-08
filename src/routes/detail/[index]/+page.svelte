@@ -3,21 +3,57 @@
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import LocationCard from '$lib/LocationCard.svelte';
+	import AccessMap from '$lib/maps/AccessMap.svelte';
+	import VisaMap from '$lib/maps/VisaMap.svelte';
+	import { onMount } from 'svelte';
 
 	export let data;
+	const countryData = data.countryData;
+
+	const visaPolicyTranslations = {
+		usa: 'USA',
+		can: 'CANADA',
+		mex: 'MEXICO',
+		aus: 'AUSTRALIA',
+		ind: 'INDIA',
+		rus: 'RUSSIA',
+		uk: 'UNITED KINGDOM',
+		afr: 'AFRICA',
+		sam: 'SOUTH AMERICA',
+		mea: 'MIDDLE EAST',
+		asi: 'ASIA',
+		jap: 'JAPAN',
+		eur: 'EUROPE'
+	};
+
+	let screenWidth = 0;
+
+	onMount(() => {
+		screenWidth = window.innerWidth;
+
+		const updateScreenWidth = () => {
+			screenWidth = window.innerWidth;
+		};
+
+		window.addEventListener('resize', updateScreenWidth);
+
+		return () => {
+			window.removeEventListener('resize', updateScreenWidth);
+		};
+	});
 </script>
 
 <svelte:head>
-	<title>{data.name}, EUROPE FIXERS</title>
+	<title>{countryData.name}, EUROPE FIXERS</title>
 </svelte:head>
 
-<HeaderWrapper title={data.name} imagePath="/countries/{data.thumbnail}" />
+<HeaderWrapper title={countryData.name} imagePath="/countries/{countryData.thumbnail}" />
 <ContentWrapper blackOnWhite={true}>
 	<div class="text-center">
 		<h2 class="unbounded display-4 my-5 pt-5 px-3">OUR SERVICES</h2>
 	</div>
 	<div class="row px-3 px-md-0">
-		{#each data.services as service}
+		{#each countryData.services as service}
 			<div class="col-md-3 col-6">
 				<h4>{service.label}</h4>
 				<ul class="ps-2">
@@ -31,16 +67,41 @@
 </ContentWrapper>
 <ContentWrapper>
 	<div class="row px-3 px-md-0 mt-5">
-		<div class="col-md-6 col-12">
-			<h2 class="unbounded display-4">ACCESS</h2>
-			<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {data.name}</p>
-			{#each data.access as access}
-				<p class="fw-light roboto">{access}</p>
-			{/each}
-		</div>
-		<div class="col-md-6 col-12">
-			<div class="accordion" id="visaAccordion">
-				{#each data.policies as policy, i}
+		{#if screenWidth >= 1150}
+			<div class="col-md-6 col-12">
+				<h2 class="unbounded display-4">ACCESS</h2>
+				<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {countryData.name}</p>
+				{#each countryData.access as access}
+					<p class="fw-light roboto">{access}</p>
+				{/each}
+			</div>
+			<div class="col-md-6 col-12">
+				<AccessMap selectedId={data.id} />
+			</div>
+		{:else}
+			<div class="col-12">
+				<h2 class="unbounded display-4">ACCESS</h2>
+				<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {countryData.name}</p>
+				{#each countryData.access as access}
+					<p class="fw-light roboto">{access}</p>
+				{/each}
+			</div>
+			{#if screenWidth >= 550}
+				<div class="col-12 map-parent-small">
+					<AccessMap selectedId={data.id} />
+				</div>
+			{/if}
+		{/if}
+	</div>
+</ContentWrapper>
+<ContentWrapper>
+	<div>
+		<h2 class="unbounded display-4">ACCESS</h2>
+		{#if screenWidth >= 1150}
+			<VisaMap texts={countryData.policies} />
+		{:else}
+			<div class="accordion p-3" id="visaAccordion">
+				{#each Object.entries(countryData.policies) as [key, value], i}
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="heading-{i}">
 							<button
@@ -51,7 +112,7 @@
 								aria-expanded="false"
 								aria-controls="collapse-{i}"
 							>
-								{policy.name}
+								{visaPolicyTranslations[key]}
 							</button>
 						</h2>
 						<div
@@ -61,11 +122,20 @@
 							data-bs-parent="#visaAccordion"
 						>
 							<div class="accordion-body roboto fw-light">
-								{policy.text}
+								{value}
 							</div>
 						</div>
 					</div>
 				{/each}
+			</div>
+		{/if}
+		<div class="row px-3 px-md-0 ">
+			<div class="col-md-6 col-12">
+				<p class="fw-light roboto">{countryData.visa[0]}</p>
+			</div>
+			<div class="col-md-6 col-12">
+				<p class="fw-light roboto">{countryData.visa[1]}</p>
+				<p class="fw-light roboto">{countryData.visa[2]}</p>
 			</div>
 		</div>
 	</div>
@@ -73,11 +143,12 @@
 <ContentWrapper>
 	<h2 class="unbounded display-4">LOCATIONS</h2>
 	<div class="row px-3 px-md-0">
-		{#each data.locations as location}
+		{#each countryData.locations as location, i}
 			<LocationCard
 				label={location.label}
 				thumbnail={location.img}
-				last="col-md-6"
+				thumbnailFolder={countryData.locationParent}
+				last={i == countryData.locations.length - 1 ? "" : "col-md-6"}
 				desc={location.text}
 			/>
 		{/each}
@@ -92,6 +163,10 @@
 </ContentWrapper>
 
 <style>
+	.map-parent-small {
+		min-height: 600px;
+	}
+
 	.accordion-button {
 		background-color: var(--yellow) !important;
 	}

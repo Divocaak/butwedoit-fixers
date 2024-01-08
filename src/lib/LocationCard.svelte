@@ -1,11 +1,11 @@
 <script>
-	export let last, label, thumbnail, desc;
+	export let last, label, thumbnail, desc, thumbnailFolder;
 </script>
 
 <div class="{last} col-12 p-0">
 	<div
 		class="card-background d-none d-md-flex"
-		style="background-image: url('/locations/{thumbnail}');"
+		style="background-image: url('/locations/{thumbnailFolder}/{thumbnail}.jpg');"
 	>
 		<div class="card-content-holder d-flex align-items-center w-100">
 			<div class="text-center w-100">

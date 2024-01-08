@@ -4,7 +4,7 @@
 	import Footer from '$lib/Footer.svelte';
 	import ActivityBox from '$lib//ActivityBox.svelte';
 	import Card from '$lib/Card.svelte';
-	import MapWidget from '$lib/MapWidget.svelte';
+	import HomeMap from '$lib/maps/HomeMap.svelte';
 	import MoreButton from '$lib/MoreButton.svelte';
 </script>
 
@@ -13,7 +13,7 @@
 </svelte:head>
 
 <HeaderWrapper hideMedia={true}>
-	<MapWidget/>
+	<HomeMap />
 	<div class="map-overlay-container mx-5">
 		<h2 class="display-4 unbounded">CENTRAL EU</h2>
 		<h1 class="display-1 unbounded fw-bold pt-3 pb-4">LOCAL<br />FIXER</h1>
@@ -27,17 +27,20 @@
 <ContentWrapper gradient={true}>
 	<div class="row mt-5 py-5 px-3 px-md-0" id="info">
 		<div class="col-md-6 col-12">
-			<p class="lead fw-bold unbounded">
-				Find the perfect spots for your shoots right in the heart of Europe! From beautiful mountain
-				peaks, to green valleys, fairylike chateaux and castles, historical towns, industrial
-				complexes or contemporary architecture, all just a quick drive from each other.
+			<p class="lead fw-bold unbounded text-uppercase" style="font-size:1.9rem;">
+				we can Find the perfect spots for your shoots right in the heart of Europe!
 			</p>
 		</div>
 		<div class="col-md-6 col-12 roboto">
 			<p>
-				Interested? We can help you find the right locations while securing all permits, equipment,
-				services, translations and staff you might need at your shoot. Contact us and let the
-				production begin!
+				Interested? From beautiful mountain peaks, to green valleys, fairylike chateaux and castles,
+				historical towns, industrial complexes or contemporary architecture, all just a quick drive
+				from each other.
+			</p>
+			<p>
+				We can help you find the right locations while securing all permits, equipment, services,
+				translations and staff you might need at your shoot. Contact us and let the production
+				begin!
 			</p>
 		</div>
 	</div>
@@ -59,8 +62,17 @@
 		<Card
 			label="AUSTRIA"
 			thumbnail="au.jpg"
+			last="col-md-6"
 			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
 			id="2"
+		/>
+		<Card
+			label="HUNGARY"
+			thumbnail="hu.jpg"
+			last="col-md-6"
+			desc="Work in progress"
+			id="3"
+			wip={true}
 		/>
 	</div>
 	<h2 class="unbounded text-center display-4 mt-5 pt-5" id="offer">WHAT WE OFFER AS FIXERS</h2>
@@ -125,8 +137,22 @@
 <style>
 	.grid-container {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		grid-template-columns: repeat(4, minmax(15rem, 1fr));
 		gap: 1rem;
+	}
+
+	/* Media query for screens smaller than 768px (e.g., smartphones) */
+	@media screen and (max-width: 767px) {
+		.grid-container {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	/* Media query for screens between 768px and 991px (e.g., tablets) */
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		.grid-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	.map-overlay-container {
@@ -134,6 +160,7 @@
 		z-index: 2;
 		color: var(--white);
 		top: 200px;
+		pointer-events: none;
 	}
 
 	.powered-by-container {

@@ -34,6 +34,8 @@
 		border: 1px solid var(--yellow);
 
 		transition: all ease-in-out 0.25s;
+
+		pointer-events: all;
 	}
 
 	a:hover {

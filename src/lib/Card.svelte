@@ -5,17 +5,23 @@
 	export let thumbnail = '';
 	export let desc = '';
 	export let id = '';
+	export let wip = false;
+
+	function resolveClick() {
+		if (!wip) goto('/detail/' + id);
+	}
 </script>
 
 <div
 	class="{last} col-12 p-0 videoCard"
 	tabindex="0"
 	role="button"
-	on:click={goto('/detail/' + id)}
-	on:keypress={goto('/detail/' + id)}
+	on:click={resolveClick}
+	on:keypress={resolveClick}
 >
 	<div
 		class="card-background d-none d-md-flex"
+		class:cursor-default={wip}
 		style="background-image: url('/cards/{thumbnail}');"
 	>
 		<div class="card-content-holder d-flex align-items-center w-100">
@@ -46,6 +52,10 @@
 		color: var(--black);
 	}
 
+	.cursor-default{
+		cursor: default;
+	}
+
 	.card-background-small {
 		height: 30vh;
 	}
@@ -66,7 +76,7 @@
 	}
 
 	.card-content-holder {
-		background-color: rgba(0, 0, 0, 0.4);
+		background: rgba(0, 0, 0, 0.4);
 		transition: all 0.5s;
 	}
 
