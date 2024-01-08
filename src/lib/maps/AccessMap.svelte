@@ -45,6 +45,8 @@
 	}
 </script>
 
+<!-- TODO scandinavia -->
+
 <div class="map-parent">
 	<div class="capitals-container">
 		<canvas id="arrow-canvas" width="1000" height="1000" />

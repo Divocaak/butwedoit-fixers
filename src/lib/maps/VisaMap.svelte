@@ -17,6 +17,8 @@
 	/* TODO cleanup to separate js file (redundant as its the same as HomeMap) */
 	import { onMount } from 'svelte';
 
+	export let texts = {};
+
 	let mapParent;
 	let mapContainer;
 
@@ -72,37 +74,71 @@
 </script>
 
 <div class="map-parent" bind:this={mapParent}>
+	<!-- TODO choose your living area to learn about visa policy rules -->
 	<div class="map-container" bind:this={mapContainer}>
-		<VancataSvgWrapper label="Russia" labelTop={40} labelLeft={70}><Russia /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Africa" labelTop={60} labelLeft={50}><Africa /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Asia" labelTop={51} labelLeft={70}><Asia /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Australia" labelTop={69.5} labelLeft={78}
+		<VancataSvgWrapper label="Russia" labelTop={40} labelLeft={70} text={texts.rus}
+			><Russia /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper label="Africa" labelTop={60} labelLeft={50} text={texts.afr}
+			><Africa /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper label="Asia" labelTop={51} labelLeft={70} text={texts.asi}
+			><Asia /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper label="Australia" labelTop={69.5} labelLeft={78} text={texts.aus}
 			><Australia /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="Canada" labelTop={42} labelLeft={13}><Canada /></VancataSvgWrapper>
-		<VancataSvgWrapper label="Europe" labelTop={47.5} labelLeft={48}><Europe /></VancataSvgWrapper>
-		<VancataSvgWrapper label="India" labelTop={59} labelLeft={68.6} labelInverted={true}
-			><India /></VancataSvgWrapper
+		<VancataSvgWrapper label="Canada" labelTop={42} labelLeft={13} text={texts.can}
+			><Canada /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="Japan" labelTop={51} labelLeft={85} labelInverted={true}
-			><Japan /></VancataSvgWrapper
+		<VancataSvgWrapper label="Europe" labelTop={47.5} labelLeft={48} text={texts.eur}
+			><Europe /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="Mexico" labelTop={59} labelLeft={17} labelInverted={true}
-			><Mexico /></VancataSvgWrapper
+		<VancataSvgWrapper
+			label="India"
+			labelTop={59}
+			labelLeft={68.6}
+			labelInverted={true}
+			text={texts.ind}><India /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper
+			label="Japan"
+			labelTop={51}
+			labelLeft={85}
+			labelInverted={true}
+			text={texts.jap}><Japan /></VancataSvgWrapper
+		>
+		<VancataSvgWrapper
+			label="Mexico"
+			labelTop={59}
+			labelLeft={17}
+			labelInverted={true}
+			text={texts.mex}><Mexico /></VancataSvgWrapper
 		>
 		<VancataSvgWrapper
 			label="Middle"
 			labelLine="East"
 			labelTop={52.8}
-			labelLeft={56.6}><MiddleEast /></VancataSvgWrapper
+			labelLeft={56.6}
+			text={texts.mea}><MiddleEast /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="South" labelLine="America" labelTop={63} labelLeft={28}
-			><SouthAmerica /></VancataSvgWrapper
+		<VancataSvgWrapper
+			label="South"
+			labelLine="America"
+			labelTop={63}
+			labelLeft={28}
+			text={texts.sam}><SouthAmerica /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="UK" labelTop={44.5} labelLeft={43} labelInverted={true}
-			><UnitedKingdom /></VancataSvgWrapper
+		<VancataSvgWrapper
+			label="UK"
+			labelTop={44.5}
+			labelLeft={43}
+			labelInverted={true}
+			text={texts.uk}><UnitedKingdom /></VancataSvgWrapper
 		>
-		<VancataSvgWrapper label="USA" labelTop={51} labelLeft={18}><UnitedStates /></VancataSvgWrapper>
+		<VancataSvgWrapper label="USA" labelTop={51} labelLeft={18} text={texts.usa}
+			><UnitedStates /></VancataSvgWrapper
+		>
 	</div>
 </div>
 

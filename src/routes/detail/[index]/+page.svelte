@@ -81,7 +81,7 @@
 <ContentWrapper>
 	<div>
 		<h2 class="unbounded display-4">ACCESS</h2>
-		<VisaMap />
+		<VisaMap texts={countryData.policies} />
 		<div class="row">
 			<div class="col-md-6 col-12">
 				<p class="fw-light roboto">{countryData.visa[0]}</p>

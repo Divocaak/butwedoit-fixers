@@ -6,6 +6,7 @@
 	export let labelTop = 0;
 	export let labelLeft = 0;
 	export let labelInverted = false;
+	export let text = '';
 </script>
 
 <div>
@@ -26,6 +27,7 @@
 			{/if}
 		</p>
 	</div>
+	<div class="info-box" style="top:{labelTop + 2}px; left:{labelLeft - 1}px;"><p>{text}</p></div>
 </div>
 
 <style>
@@ -56,22 +58,39 @@
 		stroke-width: 0.2rem;
 	}
 
-    .country:hover ~ .label{
-        opacity: 1;
-    }
-    
+	.country:hover ~ .label {
+		opacity: 1;
+	}
+
 	.label {
-        position: absolute;
+		position: absolute;
 		font-size: 0.1rem;
 		z-index: 8;
 		pointer-events: none;
-        color: var(--black);
-        opacity: 0;
-        font-size: .08rem;
-        transition: all .35s ease-in-out;
+		color: var(--black);
+		opacity: 0;
+		font-size: 0.08rem;
+		transition: all 0.35s ease-in-out;
 	}
 
-    .labelInverted{
-        color: var(--white);
+	.labelInverted {
+		color: var(--white);
+	}
+
+    .country:hover ~ .info-box{
+        opacity: 1;
     }
+
+	.info-box {
+		position: absolute;
+        font-size: .1rem;
+		max-width: 40px;
+		width: max-content;
+		height: auto;
+		background-color: red;
+		z-index: 8;
+		pointer-events: none;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+	}
 </style>

@@ -94,60 +94,21 @@
                 ]
             }
         ],
-        "policies": [
-            {
-                "name": "USA",
-                "text": "Citizens of the U.S.A. are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe."
-            },
-            {
-                "name": "CANADA",
-                "text": "Citizens of Canada are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "MEXICO",
-                "text": "Citizens of Mexico are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "AUSTRALIA",
-                "text": "Citizens of Australia and New Zeland are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "INDIA",
-                "text": "Citizens of India are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "RUSSIA",
-                "text": "Citizens of Russia are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "UK",
-                "text": "Citizens of the United Kingdom are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "AFRICA",
-                "text": "Citizens of any African country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "SOUTH AMERICA",
-                "text": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "MIDDLE EAST",
-                "text": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "ASIA",
-                "text": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "JAPAN",
-                "text": "Citizens of Japan are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "EUROPE ",
-                "text": "Citizens of Schengen countries can spend up to three months in the Czech Republic without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
-            }
-        ],
+        "policies": {
+            "usa": "Citizens of the U.S.A. are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe.",
+            "can": "Citizens of Canada are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "mex": "Citizens of Mexico are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "aus": "Citizens of Australia and New Zeland are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "ind": "Citizens of India are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "rus": "Citizens of Russia are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "uk": "Citizens of the United Kingdom are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "afr": "Citizens of any African country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "sam": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "mea": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "asi": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit the Czech Republic/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "jap": "Citizens of Japan are not required to have a visa to visit the Czech Republic/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "eur": "Citizens of Schengen countries can spend up to three months in the Czech Republic without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
+        },
         "locations": [
             {
                 "label": "Prague",
@@ -344,60 +305,21 @@
                 ]
             }
         ],
-        "policies": [
-            {
-                "name": "USA",
-                "text": "Citizens of the U.S.A. are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe."
-            },
-            {
-                "name": "CANADA",
-                "text": "Citizens of Canada are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "MEXICO",
-                "text": "Citizens of Mexico are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "AUSTRALIA",
-                "text": "Citizens of Australia and New Zeland are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "INDIA",
-                "text": "Citizens of India are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "RUSSIA",
-                "text": "Citizens of Russia are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "UK",
-                "text": "Citizens of the United Kingdom are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "AFRICA",
-                "text": "Citizens of any African country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "SOUTH AMERICA",
-                "text": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "MIDDLE EAST",
-                "text": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "ASIA",
-                "text": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "JAPAN",
-                "text": "Citizens of Japan are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "EUROPE ",
-                "text": "Citizens of Schengen countries can spend up to three months in Slovakia without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
-            }
-        ],
+        "policies": {
+            "usa": "Citizens of the U.S.A. are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe.",
+            "can": "Citizens of Canada are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "mex": "Citizens of Mexico are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "aus": "Citizens of Australia and New Zeland are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "ind": "Citizens of India are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "rus": "Citizens of Russia are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "uk": "Citizens of the United Kingdom are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "afr": "Citizens of any African country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "sam": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "mea": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "asi": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit Slovakia/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "jap": "Citizens of Japan are not required to have a visa to visit Slovakia/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "eur": "Citizens of Schengen countries can spend up to three months in Slovakia without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
+        },
         "locations": [
             {
                 "label": "Betliar",
@@ -565,60 +487,21 @@
                 ]
             }
         ],
-        "policies": [
-            {
-                "name": "USA",
-                "text": "Citizens of the U.S.A. are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe."
-            },
-            {
-                "name": "CANADA",
-                "text": "Citizens of Canada are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "MEXICO",
-                "text": "Citizens of Mexico are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "AUSTRALIA",
-                "text": "Citizens of Australia and New Zeland are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "INDIA",
-                "text": "Citizens of India are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "RUSSIA",
-                "text": "Citizens of Russia are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "UK",
-                "text": "Citizens of the United Kingdom are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "AFRICA",
-                "text": "Citizens of any African country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "SOUTH AMERICA",
-                "text": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "MIDDLE EAST",
-                "text": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "ASIA",
-                "text": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process"
-            },
-            {
-                "name": "JAPAN",
-                "text": "Citizens of Japan are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area."
-            },
-            {
-                "name": "EUROPE ",
-                "text": "Citizens of Schengen countries can spend up to three months in Austria without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
-            }
-        ],
+        "policies": {
+            "usa": "Citizens of the U.S.A. are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. You are required to fill up European Travel Information and Authorization System (ETIAS), an electronic document required for entry into much of Europe.",
+            "can": "Citizens of Canada are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "mex": "Citizens of Mexico are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "aus": "Citizens of Australia and New Zeland are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "ind": "Citizens of India are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Indian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "rus": "Citizens of Russia are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows Russian citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "uk": "Citizens of the United Kingdom are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "afr": "Citizens of any African country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows African citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "sam": "Citizens of any South American (except Guyana, Suriname, Bolivia, Ecuador - these countries MUST APPLY for VISA) country are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "mea": "Citizens of any Middle East (except Israel, United Arab Emirates - these countries not required to have a VISA) country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "asi": "Citizens of any Asia (except Japan, South Korea, Hong Kong, Malaysia, Taiwan - these countries not required to have a VISA) country are required to have a visa to visit Austria/Schengen area. You must apply to the embassy or consulate of the Czech republic. Visa allows citizens to travel freely within the 27 countries in the Schengen Zone for a maximum stay of up to 90 days. The standard application fee for a Schengen visa is EUR 80. The applications usually take around two weeks to process",
+            "jap": "Citizens of Japan are not required to have a visa to visit Austria/Schengen area for a period of up to 90 days within a 180-day period (except profitable activities) - it is calculated from the date of first entry into any Schengen country. Ensure that your passport is valid for at least three months beyond your intended departure date from the Schengen Area.",
+            "eur": "Citizens of Schengen countries can spend up to three months in Austria without any special permits. However, if their stay exceeds three months, they will need to apply for a visa. Czechia is a signatory of the Convention on Temporary Admissions, and ATA Carnets are accepted, simplifying the process of transporting film equipment across the border."
+        },
         "locations": [
             {
                 "label": "Vienna",
