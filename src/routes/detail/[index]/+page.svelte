@@ -47,7 +47,11 @@
 	<title>{countryData.name}, EUROPE FIXERS</title>
 </svelte:head>
 
-<HeaderWrapper title={countryData.name} imagePath="/countries/{countryData.thumbnail}" />
+<HeaderWrapper
+	title={countryData.name}
+	isCountry={true}
+	imagePath="/countries/{countryData.thumbnail}"
+/>
 <ContentWrapper blackOnWhite={true}>
 	<div class="text-center">
 		<h2 class="unbounded display-4 my-5 pt-5 px-3">OUR SERVICES</h2>
@@ -96,7 +100,7 @@
 </ContentWrapper>
 <ContentWrapper>
 	<div>
-		<h2 class="unbounded display-4">ACCESS</h2>
+		<h2 class="unbounded display-4 ps-3 ps-md-0">ACCESS</h2>
 		{#if screenWidth >= 1150}
 			<VisaMap texts={countryData.policies} />
 		{:else}
@@ -129,7 +133,7 @@
 				{/each}
 			</div>
 		{/if}
-		<div class="row px-3 px-md-0 ">
+		<div class="row px-3 px-md-0">
 			<div class="col-md-6 col-12">
 				<p class="fw-light roboto">{countryData.visa[0]}</p>
 			</div>
@@ -141,14 +145,14 @@
 	</div>
 </ContentWrapper>
 <ContentWrapper>
-	<h2 class="unbounded display-4">LOCATIONS</h2>
-	<div class="row px-3 px-md-0">
+	<h2 class="unbounded display-4 ps-3 ps-md-0">LOCATIONS</h2>
+	<div class="row">
 		{#each countryData.locations as location, i}
 			<LocationCard
 				label={location.label}
 				thumbnail={location.img}
 				thumbnailFolder={countryData.locationParent}
-				last={i == countryData.locations.length - 1 ? "" : "col-md-6"}
+				last={i == countryData.locations.length - 1 ? '' : 'col-md-6'}
 				desc={location.text}
 			/>
 		{/each}

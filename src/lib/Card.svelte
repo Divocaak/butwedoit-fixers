@@ -1,3 +1,4 @@
+<!-- TODO merge with LocationCard.svelte -->
 <script>
 	import { goto } from '$app/navigation';
 	export let last = '';
@@ -20,7 +21,7 @@
 	on:keypress={resolveClick}
 >
 	<div
-		class="card-background d-none d-md-flex"
+		class="card-background"
 		class:cursor-default={wip}
 		style="background-image: url('/cards/{thumbnail}');"
 	>
@@ -29,15 +30,6 @@
 				<h3 class="unbounded">{label}</h3>
 				<p class="roboto px-5">{desc}</p>
 			</div>
-		</div>
-	</div>
-	<div
-		class="card-background card-background-small d-block d-md-none"
-		style="background-image: url('/cards/{thumbnail}');"
-	>
-		<div class="card-content-holder-small text-center px-2">
-			<h3 class="unbounded pt-1 mb-1 lh-sm" style="font-size: .6em;">{label}</h3>
-			<p class="roboto pb-1 lh-sm" style="font-size: .6em;">{desc}</p>
 		</div>
 	</div>
 </div>
@@ -52,32 +44,23 @@
 		color: var(--black);
 	}
 
-	.cursor-default{
+	.cursor-default {
 		cursor: default;
 	}
 
-	.card-background-small {
-		height: 30vh;
-	}
-
-	.card-content-holder,
-	.card-content-holder-small {
+	.card-content-holder {
 		pointer-events: none;
 		position: relative;
 		height: 50vh;
-	}
-
-	.card-content-holder-small {
-		background-color: var(--yellow);
-		left: 2.5%;
-		max-width: 40%;
-		width: max-content;
-		height: auto;
-	}
-
-	.card-content-holder {
 		background: rgba(0, 0, 0, 0.4);
 		transition: all 0.5s;
+	}
+
+	@media screen and (max-width: 767px) {
+		.card-content-holder,
+		.card-background {
+			height: 30vh;
+		}
 	}
 
 	.card-content-holder h3 {
@@ -97,17 +80,19 @@
 		transition: all 0.5s;
 	}
 
-	.card-background:hover .card-content-holder {
-		background-color: var(--yellow);
-		opacity: 0.9;
-	}
+	@media screen and (min-width: 767px) {
+		.card-background:hover .card-content-holder {
+			background-color: var(--yellow);
+			opacity: 0.9;
+		}
 
-	.card-background:hover .card-content-holder h3 {
-		color: var(--black);
-		top: 35%;
-	}
+		.card-background:hover .card-content-holder h3 {
+			color: var(--black);
+			top: 35%;
+		}
 
-	.card-background:hover .card-content-holder p {
-		opacity: 1;
+		.card-background:hover .card-content-holder p {
+			opacity: 1;
+		}
 	}
 </style>

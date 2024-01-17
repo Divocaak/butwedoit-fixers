@@ -3,7 +3,7 @@
 	import Credit from '$lib/Credit.svelte';
 </script>
 
-<div class="footer-wrapper mx-5 p-5 mt-5 black-on-white">
+<div class="footer-wrapper mx-5 p-5 mt-5 black-on-white" id="contact">
 	<div class="row">
 		<div class="col-12 col-md-4 montserrat">
 			<LinkButton href="mailto:hello@europefixer.cz" blackOnWhite={true}
