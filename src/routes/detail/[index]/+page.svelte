@@ -51,6 +51,7 @@
 	title={countryData.name}
 	isCountry={true}
 	imagePath="/countries/{countryData.thumbnail}"
+	iconName={countryData.locationParent}
 />
 <ContentWrapper blackOnWhite={true}>
 	<div class="text-center">

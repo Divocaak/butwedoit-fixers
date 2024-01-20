@@ -3,10 +3,11 @@
 	import FramedButton from '$lib/FramedButton.svelte';
 
 	export let isCountry = false;
+	export let iconName = "eu";
 </script>
 
 <div id="overlay-navbar" class="row d-flex flex-row align-items-center">
-	<div class="col-5"><a href="/" id="logo-container" class="float-start"><div /></a></div>
+	<div class="col-5"><a href="/" id="logo-container" class="float-start"><div style="background-image: url('/navbarLogos/{iconName}.png');"/></a></div>
 	<div class="col-7 d-block d-md-none">
 		{#if isCountry}
 			<LinkButton href="/#countries" classes="d-block w-100 text-end"
@@ -55,15 +56,10 @@
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-image: url('/logo_bwd.png');
 		position: relative;
 		top: 1vh;
 		left: 1vw;
 		height: 5rem;
 		width: 5rem;
-	}
-
-	.country-contact {
-		background-color: red;
 	}
 </style>

@@ -15,8 +15,8 @@
 <HeaderWrapper hideMedia={true}>
 	<HomeMap />
 	<div class="map-overlay-container mx-0 mx-md-3">
-		<h2 class="display-4 unbounded">CENTRAL EU</h2>
-		<h1 class="display-1 unbounded fw-bold pt-0 pt-md-3 pb-4">LOCAL<br />FIXER</h1>
+		<h2 class="display-md-4 unbounded">CENTRAL EU</h2>
+		<h1 class="display-3 display-md-1 unbounded fw-bold pt-0 pt-md-3 pb-4">LOCAL<br />FIXER</h1>
 		<FramedButton hideOnSm={true} href="#info"
 			>FIND OUT
 			<svg
@@ -179,6 +179,10 @@
 		display: inline-block;
 		height: 100px;
 		width: auto;
+	}
+
+	#info{
+		z-index: 10;
 	}
 
 	/* Media query for screens smaller than 768px (e.g., smartphones) */
