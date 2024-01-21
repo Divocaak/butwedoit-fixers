@@ -3,7 +3,7 @@
 	import Credit from '$lib/Credit.svelte';
 </script>
 
-<div class="footer-wrapper mx-5 p-5 mt-5 black-on-white">
+<div class="footer-wrapper mx-5 p-5 mt-5 black-on-white" id="contact">
 	<div class="row">
 		<div class="col-12 col-md-4 montserrat">
 			<LinkButton href="mailto:hello@europefixer.cz" blackOnWhite={true}
@@ -23,26 +23,26 @@
 		</div>
 		<div class="col-12 col-md-8">
 			<div class="row align-items-center">
-				<div class="col"><img class="img-fluid" src="/logos/adidas.png" alt="logo" /></div>
+				<div class="col"><img class="img-fluid" src="/logos/adidas.png" alt="logo" loading="lazy" /></div>
 				<div class="col">
-					<img class="img-fluid inverted" src="/logos/wolt.png" alt="logo" />
+					<img class="img-fluid inverted" src="/logos/wolt.png" alt="logo" loading="lazy" />
 				</div>
-				<div class="col"><img class="img-fluid inverted" src="/logos/loreal.png" alt="logo" /></div>
-				<div class="col"><img class="img-fluid inverted" src="/logos/hbo.png" alt="logo" /></div>
-				<div class="col"><img class="img-fluid" src="/logos/redbull.png" alt="logo" /></div>
+				<div class="col"><img class="img-fluid inverted" src="/logos/loreal.png" alt="logo" loading="lazy" /></div>
+				<div class="col"><img class="img-fluid inverted" src="/logos/hbo.png" alt="logo" loading="lazy" /></div>
+				<div class="col"><img class="img-fluid" src="/logos/redbull.png" alt="logo" loading="lazy" /></div>
 			</div>
 			<div class="row align-items-center">
 				<div class="col">
-					<img class="img-fluid inverted" src="/logos/dm.png" alt="logo" />
+					<img class="img-fluid inverted" src="/logos/dm.png" alt="logo" loading="lazy" />
 				</div>
-				<div class="col"><img class="img-fluid" src="/logos/samsung.png" alt="logo" /></div>
+				<div class="col"><img class="img-fluid" src="/logos/samsung.png" alt="logo" loading="lazy" /></div>
 				<div class="col">
-					<img class="img-fluid" src="/logos/discovery.png" alt="logo" />
+					<img class="img-fluid" src="/logos/discovery.png" alt="logo" loading="lazy" />
 				</div>
 				<div class="col">
-					<img class="img-fluid" src="/logos/hm.png" alt="logo" />
+					<img class="img-fluid" src="/logos/hm.png" alt="logo" loading="lazy" />
 				</div>
-				<div class="col"><img class="img-fluid" src="/logos/elle.png" alt="logo" /></div>
+				<div class="col"><img class="img-fluid" src="/logos/elle.png" alt="logo" loading="lazy" /></div>
 			</div>
 			<p class="roboto text-end pt-5 mt-md-5">© butwedoit, All rights reserved.</p>
 			<Credit />

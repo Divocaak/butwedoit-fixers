@@ -34,6 +34,25 @@
                 ]
             },
             {
+                "label": "LOGISTICS & EQUIPMENT",
+                "values": [
+                    "FILMING EQUIPMENT",
+                    "(CAMERA, LIGHTS, GRIP)",
+                    "TECHNICAL CREW",
+                    "DRIVERS",
+                    "ART DEPARTMENT",
+                    "SFX CREWS",
+                    "HIGH-END EQUIPMENT RENTAL",
+                    "STUDIOS",
+                    "TRANSPORTATION",
+                    "VANS/MINIBUSES",
+                    "WALKIE TALKIES",
+                    "PRODUCTION TENTS",
+                    "SPECIALIZED VEHICLES",
+                    "PRODUCTION HOUSE"
+                ]
+            },
+            {
                 "label": "LOCAL PRODUCTION CREW",
                 "values": [
                     "PRODUCTION ASSISTANTS",
@@ -52,25 +71,6 @@
                     "MAKE UP ARTISTS",
                     "COSTUME/STYLISTS",
                     "SET DESIGNERS"
-                ]
-            },
-            {
-                "label": "LOGISTICS & EQUIPMENT ",
-                "values": [
-                    "FILMING EQUIPMENT",
-                    "(CAMERA, LIGHTS, GRIP)",
-                    "TECHNICAL CREW",
-                    "DRIVERS",
-                    "ART DEPARTMENT",
-                    "SFX CREWS",
-                    "HIGH-END EQUIPMENT RENTAL",
-                    "STUDIOS",
-                    "TRANSPORTATION",
-                    "VANS/MINIBUSES",
-                    "WALKIE TALKIES",
-                    "PRODUCTION TENTS",
-                    "SPECIALIZED VEHICLES",
-                    "PRODUCTION HOUSE"
                 ]
             },
             {
@@ -210,6 +210,11 @@
                 "label": "Panská Rock",
                 "text": "This national nature monument - known as a stone organ is situated near the village of Prácheň near Kamenický Šenov. The geological formation is made of basalt columns (in pentagonal or hexagonal shapes) with mostly vertical orientation.",
                 "img": "19"
+            },
+            {
+                "label": "Telč",
+                "text": "Nestled in the Vysočina Region, Telč enchants visitors with its UNESCO-listed Renaissance square, adorned by colorful houses and a splendid chateau. The town's history is palpable in every corner, offering a glimpse into its prosperous past. Surrounded by a serene landscape, Telč is a haven for nature lovers. Telc beckons with a harmonious blend of history and natural beauty.",
+                "img": "20"
             }
         ]
     },
@@ -246,6 +251,25 @@
                 ]
             },
             {
+                "label": "LOGISTICS & EQUIPMENT",
+                "values": [
+                    "FILMING EQUIPMENT ",
+                    "(CAMERA, LIGHTS, GRIP)",
+                    "TECHNICAL CREW",
+                    "DRIVERS",
+                    "ART DEPARTMENT",
+                    "SFX CREWS",
+                    "HIGH-END EQUIPMENT RENTAL",
+                    "STUDIOS",
+                    "TRANSPORTATION",
+                    "VANS/MINIBUSES",
+                    "WALKIE TALKIES",
+                    "PRODUCTION TENTS",
+                    "SPECIALIZED VEHICLES",
+                    "PRODUCTION HOUSE"
+                ]
+            },
+            {
                 "label": "LOCAL PRODUCTION CREW",
                 "values": [
                     "PRODUCTION ASSISTANTS",
@@ -264,25 +288,6 @@
                     "MAKE UP ARTISTS",
                     "COSTUME/STYLISTS",
                     "SET DESIGNERS"
-                ]
-            },
-            {
-                "label": "LOGISTICS & EQUIPMENT ",
-                "values": [
-                    "FILMING EQUIPMENT ",
-                    "(CAMERA, LIGHTS, GRIP)",
-                    "TECHNICAL CREW",
-                    "DRIVERS",
-                    "ART DEPARTMENT",
-                    "SFX CREWS",
-                    "HIGH-END EQUIPMENT RENTAL",
-                    "STUDIOS",
-                    "TRANSPORTATION",
-                    "VANS/MINIBUSES",
-                    "WALKIE TALKIES",
-                    "PRODUCTION TENTS",
-                    "SPECIALIZED VEHICLES",
-                    "PRODUCTION HOUSE"
                 ]
             },
             {
@@ -424,6 +429,25 @@
                 ]
             },
             {
+                "label": "LOGISTICS & EQUIPMENT",
+                "values": [
+                    "FILMING EQUIPMENT ",
+                    "(CAMERA, LIGHTS, GRIP)",
+                    "TECHNICAL CREW",
+                    "DRIVERS",
+                    "ART DEPARTMENT",
+                    "SFX CREWS",
+                    "HIGH-END EQUIPMENT RENTAL",
+                    "STUDIOS",
+                    "TRANSPORTATION",
+                    "VANS/MINIBUSES",
+                    "WALKIE TALKIES",
+                    "PRODUCTION TENTS",
+                    "SPECIALIZED VEHICLES",
+                    "PRODUCTION HOUSE"
+                ]
+            },
+            {
                 "label": "LOCAL PRODUCTION CREW",
                 "values": [
                     "PRODUCTION ASSISTANTS",
@@ -442,25 +466,6 @@
                     "MAKE UP ARTISTS",
                     "COSTUME/STYLISTS",
                     "SET DESIGNERS"
-                ]
-            },
-            {
-                "label": "LOGISTICS & EQUIPMENT ",
-                "values": [
-                    "FILMING EQUIPMENT ",
-                    "(CAMERA, LIGHTS, GRIP)",
-                    "TECHNICAL CREW",
-                    "DRIVERS",
-                    "ART DEPARTMENT",
-                    "SFX CREWS",
-                    "HIGH-END EQUIPMENT RENTAL",
-                    "STUDIOS",
-                    "TRANSPORTATION",
-                    "VANS/MINIBUSES",
-                    "WALKIE TALKIES",
-                    "PRODUCTION TENTS",
-                    "SPECIALIZED VEHICLES",
-                    "PRODUCTION HOUSE"
                 ]
             },
             {
@@ -560,6 +565,11 @@
                 "label": "Semmering Railway",
                 "text": "The Semmering Railway is a UNESCO World Heritage site, known for its historic railway viaducts, tunnels, and stunning mountain scenery. This location offers a unique backdrop for period films, thrillers set in train tunnels, or even modern-day train journeys against a dramatic alpine backdrop.",
                 "img": "11"
+            },
+            {
+                "label": "Stübing",
+                "text": "Stübing, as a historical small village skanzen (open-air museum), presents a unique and immersive opportunity for filmmakers. The skanzen setting allows filmmakers to step back in time, capturing the essence of a bygone era with its well-preserved historical architecture, traditional crafts, and rural landscapes. This provides an authentic and visually compelling backdrop for historical films, period pieces, or cultural documentaries.",
+                "img": "12"
             }
         ]
     }

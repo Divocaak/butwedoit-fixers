@@ -50,7 +50,7 @@
 
 	onMount(() => {
 		transformMap();
-		window.addEventListener('resize', debounce(transformMap, 200, false), false);
+		window.addEventListener('resize', debounce(transformMap, 100, false), false);
 		return () => {
 			window.removeEventListener('resize', transformMap);
 		};

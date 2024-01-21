@@ -5,7 +5,7 @@
 	import ActivityBox from '$lib//ActivityBox.svelte';
 	import Card from '$lib/Card.svelte';
 	import HomeMap from '$lib/maps/HomeMap.svelte';
-	import MoreButton from '$lib/MoreButton.svelte';
+	import FramedButton from '$lib/FramedButton.svelte';
 </script>
 
 <svelte:head>
@@ -14,18 +14,33 @@
 
 <HeaderWrapper hideMedia={true}>
 	<HomeMap />
-	<div class="map-overlay-container mx-5">
-		<h2 class="display-4 unbounded">CENTRAL EU</h2>
-		<h1 class="display-1 unbounded fw-bold pt-3 pb-4">LOCAL<br />FIXER</h1>
-		<MoreButton />
+	<div class="map-overlay-container mx-0 mx-md-3">
+		<h2 class="unbounded">CENTRAL EU</h2>
+		<h1 class="display-3 unbounded fw-bold pt-0 pt-md-3 pb-4">LOCAL<br />FIXER</h1>
+		<FramedButton hideOnSm={true} href="#info"
+			>FIND OUT
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="32"
+				height="16"
+				fill="currentColor"
+				class="bi bi-arrow-right ms-2"
+				viewBox="0 4 16 8"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+				/>
+			</svg></FramedButton
+		>
 	</div>
-	<div class="powered-by-container">
+	<a href="https://butwedoit.cz/" target="_blank" class="powered-by-container d-none d-md-inline">
 		<p class="unbounded lead me-3">POWERED BY</p>
 		<img alt="butwedoit logo" src="/logo_bwd.png" />
-	</div>
+	</a>
 </HeaderWrapper>
-<ContentWrapper gradient={true}>
-	<div class="row mt-5 py-5 px-3 px-md-0" id="info">
+<ContentWrapper gradient={true} noPadding={true}>
+	<div class="row mt-5 py-5 px-3 px-md-5" id="info">
 		<div class="col-md-6 col-12">
 			<p class="lead fw-bold unbounded text-uppercase" style="font-size:1.9rem;">
 				we can Find the perfect spots for your shoots right in the heart of Europe!
@@ -47,32 +62,32 @@
 	<div class="row" id="countries">
 		<Card
 			label="CZECH REPUBLIC"
-			thumbnail="cz.jpg"
+			thumbnail="/cards/cz.jpg"
 			last="col-md-6"
-			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
+			desc="Nestled in the heart of Europe, with a rich history and diverse landscape, filming locations are easily accessible due to their central location. Cities showcase well-preserved historical sites, UNESCO-listed castles, and modern architecture."
 			id="0"
 		/>
 		<Card
 			label="SLOVAKIA"
-			thumbnail="sk.jpg"
+			thumbnail="/cards/sk.jpg"
 			last="col-md-6"
-			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
+			desc="Presents a rich variety of filming locations, Slovakia features the breathtaking High Tatras, medieval castles, quaint villages, and modern urban areas. The country's diverse landscapes, including rolling hills, pristine lakes, and dense forests, offer filmmakers a range of options for their creative vision."
 			id="1"
 		/>
 		<Card
 			label="AUSTRIA"
-			thumbnail="au.jpg"
+			thumbnail="/cards/au.jpg"
 			last="col-md-6"
-			desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam bibendum elit eget erat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
+			desc="Unfolds a spectacular array of film locations to productions of all scales. The dramatic allure of its mountain peaks and alpine forests sets the stage for breathtaking scenes, while serene lakes and captivating cityscapes add to the diversity of options. Vienna, the capital, stands out as a filmmaker's dream, combining classic baroque architecture with modern design and a unique cultural blend."
 			id="2"
 		/>
 		<Card
 			label="HUNGARY"
-			thumbnail="hu.jpg"
+			thumbnail="/cards/hu.jpg"
 			last="col-md-6"
-			desc="Work in progress"
+			desc="We're currently in progress and gearing up to open our new office soon. Please contact us directly if you need a fixer in Hungary."
 			id="3"
-			wip={true}
+			noClick={true}
 		/>
 	</div>
 	<h2 class="unbounded text-center display-4 mt-5 pt-5" id="offer">WHAT WE OFFER AS FIXERS</h2>
@@ -130,7 +145,6 @@
 			</p>
 		</div>
 	</div>
-	<div id="contact" />
 	<Footer />
 </ContentWrapper>
 
@@ -139,20 +153,6 @@
 		display: grid;
 		grid-template-columns: repeat(4, minmax(15rem, 1fr));
 		gap: 1rem;
-	}
-
-	/* Media query for screens smaller than 768px (e.g., smartphones) */
-	@media screen and (max-width: 767px) {
-		.grid-container {
-			grid-template-columns: repeat(1, 1fr);
-		}
-	}
-
-	/* Media query for screens between 768px and 991px (e.g., tablets) */
-	@media screen and (min-width: 768px) and (max-width: 991px) {
-		.grid-container {
-			grid-template-columns: repeat(2, 1fr);
-		}
 	}
 
 	.map-overlay-container {
@@ -167,7 +167,7 @@
 		position: absolute;
 		z-index: 2;
 		color: var(--white);
-		bottom: 30px;
+		top: 110px;
 		right: 70px;
 	}
 
@@ -179,5 +179,27 @@
 		display: inline-block;
 		height: 100px;
 		width: auto;
+	}
+
+	#info{
+		z-index: 10;
+	}
+
+	/* Media query for screens smaller than 768px (e.g., smartphones) */
+	@media screen and (max-width: 767px) {
+		.grid-container {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.map-overlay-container {
+			top: 150px;
+		}
+	}
+
+	/* Media query for screens between 768px and 991px (e.g., tablets) */
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		.grid-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 </style>

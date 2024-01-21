@@ -3,14 +3,17 @@
 	export let title = '';
 	export let imagePath = null;
 	export let hideMedia = false;
+	export let isCountry = false;
+	export let iconName = 'eu';
 </script>
 
 <div class="header-wrapper" class:fixed={!hideMedia}>
 	{#if !hideMedia}
-		<img src={imagePath} alt="thumbnail" class="img-fluid" />
+		<!-- NOTE test image movement when scrolling after deploy on mobile -->
+		<img src={imagePath} alt="thumbnail" />
 	{/if}
 	<div class="header-overlay p-4" class:background={hideMedia} class:fixed={!hideMedia}>
-		<Navbar />
+		<Navbar {isCountry} {iconName} />
 		{#if !hideMedia}
 			<div class="overlay-content d-flex align-items-center">
 				<div class="text-center w-100">
@@ -33,6 +36,8 @@
 	img {
 		object-fit: cover;
 		position: fixed;
+		top: 0;
+		left: 0;
 		height: 100%;
 		width: 100%;
 	}
@@ -55,7 +60,6 @@
 	}
 
 	.fixed {
-		background-color: var(--yellow);
 		position: fixed;
 		top: 0;
 	}
