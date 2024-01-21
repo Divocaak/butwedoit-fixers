@@ -35,13 +35,12 @@
 
 	onMount(() => {
 		transformMap();
-		window.addEventListener('resize', debounce(transformMap, 200, false), false);
+		window.addEventListener('resize', debounce(transformMap, 100, false), false);
 		return () => {
 			window.removeEventListener('resize', transformMap);
 		};
 	});
 
-	/* TODO mby remove debounce everywhere */
 	function debounce(func, delay) {
 		let timeoutId;
 
@@ -203,18 +202,12 @@
 		left: 0;
 	}
 
-	/* TODO mediaqueries */
 	/* position anchor point */
 	.map-parent::before {
 		content: '';
 		position: absolute;
 		top: 50vh;
-		left: 60%;
-
-		z-index: 10;
-		width:5px;
-		height: 5px;
-		background-color: red;
+		left: 55%;
 	}
 
 	/* scale point */
@@ -223,11 +216,6 @@
 		position: absolute;
 		top: 50vh;
 		right: 5vw;
-
-		z-index: 10;
-		width:5px;
-		height: 5px;
-		background-color: blue;
 	}
 
 	.map-container {
@@ -243,11 +231,6 @@
 		position: absolute;
 		top: 540px;
 		left: 570px;
-
-		z-index: 10;
-		width:5px;
-		height: 5px;
-		background-color: pink;
 	}
 
 	/* scale point */
@@ -255,12 +238,7 @@
 		content: '';
 		position: absolute;
 		top: 490px;
-		left: 900px;
-
-		z-index: 10;
-		width:5px;
-		height: 5px;
-		background-color: cyan;
+		left: 850px;
 	}
 
 	/* Media query for screens smaller than 768px (e.g., smartphones) */
@@ -282,8 +260,18 @@
 
 	/* Media query for screens between 768px and 991px (e.g., tablets) */
 	@media screen and (min-width: 768px) and (max-width: 991px) {
-		div.country svg{
-			fill: red !important;
+		.map-parent::before {
+			top: 55%;
+			left: 52%;
+		}
+
+		.map-parent::after {
+			top: 50%;
+			left: 90%;
+		}
+
+		.map-container::after{
+			left:700px;
 		}
 	}
 

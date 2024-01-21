@@ -1,10 +1,11 @@
 <script>
 	export let blackOnWhite = false;
 	export let gradient = false;
+	export let noPadding = false;
 </script>
 
 <div
-	class="content-wrapper px-md-5"
+	class="content-wrapper {!noPadding ? 'px-md-5' : ''}"
 	class:white-on-black={!blackOnWhite}
 	class:black-on-white={blackOnWhite}
 	class:gradient-background={gradient}

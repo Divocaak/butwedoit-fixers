@@ -15,8 +15,8 @@
 <HeaderWrapper hideMedia={true}>
 	<HomeMap />
 	<div class="map-overlay-container mx-0 mx-md-3">
-		<h2 class="display-md-4 unbounded">CENTRAL EU</h2>
-		<h1 class="display-3 display-md-1 unbounded fw-bold pt-0 pt-md-3 pb-4">LOCAL<br />FIXER</h1>
+		<h2 class="unbounded">CENTRAL EU</h2>
+		<h1 class="display-3 unbounded fw-bold pt-0 pt-md-3 pb-4">LOCAL<br />FIXER</h1>
 		<FramedButton hideOnSm={true} href="#info"
 			>FIND OUT
 			<svg
@@ -34,13 +34,13 @@
 			</svg></FramedButton
 		>
 	</div>
-	<div class="powered-by-container d-none d-md-inline">
+	<a href="https://butwedoit.cz/" target="_blank" class="powered-by-container d-none d-md-inline">
 		<p class="unbounded lead me-3">POWERED BY</p>
 		<img alt="butwedoit logo" src="/logo_bwd.png" />
-	</div>
+	</a>
 </HeaderWrapper>
-<ContentWrapper gradient={true}>
-	<div class="row mt-5 py-5 px-3 px-md-0" id="info">
+<ContentWrapper gradient={true} noPadding={true}>
+	<div class="row mt-5 py-5 px-3 px-md-5" id="info">
 		<div class="col-md-6 col-12">
 			<p class="lead fw-bold unbounded text-uppercase" style="font-size:1.9rem;">
 				we can Find the perfect spots for your shoots right in the heart of Europe!
@@ -62,32 +62,32 @@
 	<div class="row" id="countries">
 		<Card
 			label="CZECH REPUBLIC"
-			thumbnail="cz.jpg"
+			thumbnail="/cards/cz.jpg"
 			last="col-md-6"
 			desc="Nestled in the heart of Europe, with a rich history and diverse landscape, filming locations are easily accessible due to their central location. Cities showcase well-preserved historical sites, UNESCO-listed castles, and modern architecture."
 			id="0"
 		/>
 		<Card
 			label="SLOVAKIA"
-			thumbnail="sk.jpg"
+			thumbnail="/cards/sk.jpg"
 			last="col-md-6"
 			desc="Presents a rich variety of filming locations, Slovakia features the breathtaking High Tatras, medieval castles, quaint villages, and modern urban areas. The country's diverse landscapes, including rolling hills, pristine lakes, and dense forests, offer filmmakers a range of options for their creative vision."
 			id="1"
 		/>
 		<Card
 			label="AUSTRIA"
-			thumbnail="au.jpg"
+			thumbnail="/cards/au.jpg"
 			last="col-md-6"
 			desc="Unfolds a spectacular array of film locations to productions of all scales. The dramatic allure of its mountain peaks and alpine forests sets the stage for breathtaking scenes, while serene lakes and captivating cityscapes add to the diversity of options. Vienna, the capital, stands out as a filmmaker's dream, combining classic baroque architecture with modern design and a unique cultural blend."
 			id="2"
 		/>
 		<Card
 			label="HUNGARY"
-			thumbnail="hu.jpg"
+			thumbnail="/cards/hu.jpg"
 			last="col-md-6"
 			desc="We're currently in progress and gearing up to open our new office soon. Please contact us directly if you need a fixer in Hungary."
 			id="3"
-			wip={true}
+			noClick={true}
 		/>
 	</div>
 	<h2 class="unbounded text-center display-4 mt-5 pt-5" id="offer">WHAT WE OFFER AS FIXERS</h2>

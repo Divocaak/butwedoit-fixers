@@ -2,7 +2,7 @@
 	import HeaderWrapper from '$lib/HeaderWrapper.svelte';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import LocationCard from '$lib/LocationCard.svelte';
+	import Card from '$lib/Card.svelte';
 	import AccessMap from '$lib/maps/AccessMap.svelte';
 	import VisaMap from '$lib/maps/VisaMap.svelte';
 	import { onMount } from 'svelte';
@@ -84,7 +84,7 @@
 				<AccessMap selectedId={data.id} />
 			</div>
 		{:else}
-			<div class="col-12">
+			<div class="col-12" style="position: relative; z-index:10; background: var(--black);">
 				<h2 class="unbounded display-4">ACCESS</h2>
 				<p class="lead unbounded">ARE YOU CONSIDERING FILMING IN {countryData.name}</p>
 				{#each countryData.access as access}
@@ -134,7 +134,7 @@
 				{/each}
 			</div>
 		{/if}
-		<div class="row px-3 px-md-0">
+		<div class="row px-3 px-md-0 pt-5">
 			<div class="col-md-6 col-12">
 				<p class="fw-light roboto">{countryData.visa[0]}</p>
 			</div>
@@ -145,16 +145,16 @@
 		</div>
 	</div>
 </ContentWrapper>
-<ContentWrapper>
-	<h2 class="unbounded display-4 ps-3 ps-md-0">LOCATIONS</h2>
+<ContentWrapper noPadding={true}>
+	<h2 class="unbounded display-4 ps-5">LOCATIONS</h2>
 	<div class="row">
 		{#each countryData.locations as location, i}
-			<LocationCard
+			<Card
 				label={location.label}
-				thumbnail={location.img}
-				thumbnailFolder={countryData.locationParent}
+				thumbnail={`/locations/${countryData.locationParent}/${location.img}.jpg`}
 				last={i == countryData.locations.length - 1 ? '' : 'col-md-6'}
 				desc={location.text}
+				noClick={true}
 			/>
 		{/each}
 	</div>
