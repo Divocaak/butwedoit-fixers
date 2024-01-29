@@ -101,7 +101,7 @@
 </ContentWrapper>
 <ContentWrapper>
 	<div>
-		<h2 class="unbounded display-4 ps-3 ps-md-0">ACCESS</h2>
+		<h2 class="unbounded display-4 ps-3 ps-md-0">VISA POLICY</h2>
 		{#if screenWidth >= 1150}
 			<VisaMap texts={countryData.policies} />
 		{:else}
@@ -146,7 +146,9 @@
 	</div>
 </ContentWrapper>
 <ContentWrapper noPadding={true}>
-	<h2 class="unbounded display-4 ps-5">LOCATIONS</h2>
+	<div class="px-md-5">
+		<h2 class="unbounded display-4 ps-3 ps-md-0">LOCATIONS</h2>
+	</div>
 	<div class="row">
 		{#each countryData.locations as location, i}
 			<Card

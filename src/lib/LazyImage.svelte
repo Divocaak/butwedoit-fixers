@@ -5,6 +5,7 @@
 	export let path;
 	export let alt = '';
 	export let additionalClasses = '';
+	export let offsetY = 0;
 
 	const src = {
 		img: { src: path, w: 1920, h: 1080 },
@@ -32,7 +33,8 @@
 	<Img
 		{src}
 		{alt}
-		class="my-img img-fluid d-inline-block {additionalClasses}"
+		class="my-img offsetter {additionalClasses}"
+		style="top:{offsetY}px;"
 		bind:ref
 		on:load={() => (loaded = true)}
 	/>
@@ -44,6 +46,13 @@
 		--reveal-transform: scale(1.02);
 		--reveal-transition: opacity 1s ease-in, transform 0.8s ease-out;
 		--reveal-filter: blur(20px);
+	}
+	
+	:global(.offsetter) {
+		position: relative;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
 	}
 
 	.wrap {
