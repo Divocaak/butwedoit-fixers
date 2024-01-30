@@ -8,6 +8,7 @@
 	export let id = '';
 	export let noClick = false;
 	export let offsetY = 0;
+	export let offsetYSm = 0;
 
 	function resolveClick() {
 		if (!noClick) goto('/detail/' + id);
@@ -22,7 +23,7 @@
 	on:keypress={resolveClick}
 	class:cursor-default={noClick}
 >
-	<LazyImage path={thumbnail} {offsetY} />
+	<LazyImage path={thumbnail} {offsetY} {offsetYSm}/>
 	<div class="card-content-holder d-flex align-items-center w-100">
 		<div class="text-center w-100">
 			<h3 class="unbounded">{label}</h3>

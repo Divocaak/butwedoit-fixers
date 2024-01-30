@@ -74,6 +74,7 @@
 			desc="Presents a rich variety of filming locations, Slovakia features the breathtaking High Tatras, medieval castles, quaint villages, and modern urban areas. The country's diverse landscapes, including rolling hills, pristine lakes, and dense forests, offer filmmakers a range of options for their creative vision."
 			id="1"
 			offsetY={-350}
+			offsetYSm={-175}
 		/>
 		<Card
 			label="AUSTRIA"

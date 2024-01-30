@@ -6,6 +6,7 @@
 	export let alt = '';
 	export let additionalClasses = '';
 	export let offsetY = 0;
+	export let offsetYSm = 0;
 
 	const src = {
 		img: { src: path, w: 1920, h: 1080 },
@@ -27,14 +28,19 @@
 	onMount(() => {
 		if (ref.complete) loaded = true;
 	});
+
+	let innerWidth = 0;
+	$: condition = innerWidth < 800;
 </script>
+
+<svelte:window bind:innerWidth/>
 
 <div class="wrap">
 	<Img
 		{src}
 		{alt}
 		class="my-img offsetter {additionalClasses}"
-		style="top:{offsetY}px;"
+		style="top:{condition ? offsetYSm : offsetY}px; "
 		bind:ref
 		on:load={() => (loaded = true)}
 	/>
@@ -47,7 +53,7 @@
 		--reveal-transition: opacity 1s ease-in, transform 0.8s ease-out;
 		--reveal-filter: blur(20px);
 	}
-	
+
 	:global(.offsetter) {
 		position: relative;
 		width: 100%;

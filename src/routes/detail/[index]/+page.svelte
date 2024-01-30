@@ -157,6 +157,8 @@
 				last={i == countryData.locations.length - 1 ? '' : 'col-md-6'}
 				desc={location.text}
 				noClick={true}
+				offsetY={location.offsetY}
+				offsetYSm={location.offsetYSm}
 			/>
 		{/each}
 	</div>
