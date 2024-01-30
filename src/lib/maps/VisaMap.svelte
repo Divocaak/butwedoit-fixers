@@ -50,26 +50,11 @@
 
 	onMount(() => {
 		transformMap();
-		window.addEventListener('resize', debounce(transformMap, 100, false), false);
+		window.addEventListener('resize', transformMap, false);
 		return () => {
 			window.removeEventListener('resize', transformMap);
 		};
 	});
-
-	function debounce(func, delay) {
-		let timeoutId;
-
-		return function () {
-			const context = this;
-			const args = arguments;
-
-			clearTimeout(timeoutId);
-
-			timeoutId = setTimeout(function () {
-				func.apply(context, args);
-			}, delay);
-		};
-	}
 </script>
 
 <p class="roboto info-text text-end">Choose your living area to learn about visa policy rules</p>

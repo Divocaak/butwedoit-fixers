@@ -9,7 +9,6 @@
 
 <div class="header-wrapper" class:fixed={!hideMedia}>
 	{#if !hideMedia}
-		<!-- NOTE test image movement when scrolling after deploy on mobile -->
 		<img src={imagePath} alt="thumbnail" />
 	{/if}
 	<div class="header-overlay p-4" class:background={hideMedia} class:fixed={!hideMedia}>

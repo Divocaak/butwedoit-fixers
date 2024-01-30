@@ -73,6 +73,8 @@
 			last="col-md-6"
 			desc="Presents a rich variety of filming locations, Slovakia features the breathtaking High Tatras, medieval castles, quaint villages, and modern urban areas. The country's diverse landscapes, including rolling hills, pristine lakes, and dense forests, offer filmmakers a range of options for their creative vision."
 			id="1"
+			offsetY={-350}
+			offsetYSm={-175}
 		/>
 		<Card
 			label="AUSTRIA"
@@ -120,28 +122,15 @@
 		</div>
 		<div class="col-md-8 col-12">
 			<p class="roboto fw-light">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In convallis. Fusce aliquam
-				vestibulum ipsum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam
-				dapibus fermentum ipsum. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac,
-				erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-				egestas. Integer pellentesque quam vel velit. Nullam dapibus fermentum ipsum. Etiam quis
-				quam. Duis condimentum augue id magna semper rutrum. Proin pede metus, vulputate nec,
-				fermentum fringilla, vehicula vitae, justo. Nulla non lectus sed nisl molestie malesuada.
-				Nullam sit amet magna in magna gravida vehicula. Duis condimentum augue id magna semper
-				rutrum. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Et harum quidem
-				rerum facilis est et expedita distinctio. Etiam quis quam. Curabitur ligula sapien, pulvinar
-				a vestibulum quis, facilisis vel sapien. Pellentesque ipsum.
+				We are a small team from Prague ready to help you with great projects! Starting as
+				videomakers specializing in the field of commercials, we operate on the Czech, Slovakian and
+				Austrian market for 6+ years and are ready to enter new locations. In our portfolio, we have
+				over 600 finished video projects and 50+ shootings or events which we have secured with our
+				production services. We work with local and international clients always ensuring to deliver
+				the best solutions available and are always ready for the challenges to come!
 			</p>
 			<p class="roboto fw-light">
-				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-				Nam sed tellus id magna elementum tincidunt. Et harum quidem rerum facilis est et expedita
-				distinctio. Aliquam erat volutpat. Curabitur ligula sapien, pulvinar a vestibulum quis,
-				facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis ante orci, molestie vitae
-				vehicula venenatis, tincidunt ac pede. Aliquam ante. Pellentesque habitant morbi tristique
-				senectus et netus et malesuada fames ac turpis egestas. Duis aute irure dolor in
-				reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Class aptent
-				taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam erat
-				volutpat.
+				Looking for a fixer for your new project in Europe? Reach out to us!
 			</p>
 		</div>
 	</div>
@@ -181,7 +170,7 @@
 		width: auto;
 	}
 
-	#info{
+	#info {
 		z-index: 10;
 	}
 

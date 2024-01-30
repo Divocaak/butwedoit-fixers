@@ -214,7 +214,10 @@
             {
                 "label": "Telč",
                 "text": "Nestled in the Vysočina Region, Telč enchants visitors with its UNESCO-listed Renaissance square, adorned by colorful houses and a splendid chateau. The town's history is palpable in every corner, offering a glimpse into its prosperous past. Surrounded by a serene landscape, Telč is a haven for nature lovers. Telc beckons with a harmonious blend of history and natural beauty.",
-                "img": "20"
+                "img": "20",
+                "offsetY": -250,
+                "offsetYSm": 0
+
             }
         ]
     },
@@ -391,7 +394,9 @@
             {
                 "label": "Pribylina - village museum",
                 "text": "It showcases valuable historical structures that have been carefully moved to this location, preserving them from potential flooding. Visitors can immerse themselves in history by exploring a range of buildings, including a Renaissance chateau with opulent interiors, the mayor's residence, the town's school, as well as workshops for a tailor, wheelwright, and blacksmith, along with a fire station. Notably, the early Gothic Church of Virgin Mary stands as the museum's crowning jewel, adorned with original wall paintings.",
-                "img": "12"
+                "img": "12",
+                "offsetY": -350,
+                "offsetYSm": 0
             }
         ]
     },
@@ -569,7 +574,9 @@
             {
                 "label": "Stübing",
                 "text": "Stübing, as a historical small village skanzen (open-air museum), presents a unique and immersive opportunity for filmmakers. The skanzen setting allows filmmakers to step back in time, capturing the essence of a bygone era with its well-preserved historical architecture, traditional crafts, and rural landscapes. This provides an authentic and visually compelling backdrop for historical films, period pieces, or cultural documentaries.",
-                "img": "12"
+                "img": "12",
+                "offsetY": -450,
+                "offsetYSm": -50
             }
         ]
     }

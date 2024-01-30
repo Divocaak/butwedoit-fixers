@@ -25,8 +25,19 @@
 		background: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 1) 0%,
-			rgba(0, 0, 0, 1) 90%,
+			rgba(0, 0, 0, 1) 93%,
 			rgba(0, 0, 0, 0) 100%
 		) !important;
+	}
+
+	@media screen and (max-width: 767px) {
+		.gradient-background {
+			background: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 1) 0%,
+				rgba(0, 0, 0, 1) 96%,
+				rgba(0, 0, 0, 0) 100%
+			) !important;
+		}
 	}
 </style>
