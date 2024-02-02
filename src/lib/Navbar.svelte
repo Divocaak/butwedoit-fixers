@@ -14,7 +14,7 @@
 				>Countries&nbsp;we&nbsp;operate</LinkButton
 			>
 			<LinkButton href="/#offer" classes="d-block w-100 text-end">What&nbsp;we&nbsp;offer</LinkButton>
-			<LinkButton href="#who" classes="d-block w-100 text-end">Who&nbsp;we&nbsp;are</LinkButton>
+			<LinkButton href="/#who" classes="d-block w-100 text-end">Who&nbsp;we&nbsp;are</LinkButton>
 			<div class="d-block w-100 text-end mt-3">
 				<FramedButton href="#contact">Contact</FramedButton>
 			</div>
@@ -31,7 +31,7 @@
 				<LinkButton href="/#offer" classes="px-1 px-md-3">What&nbsp;we&nbsp;offer</LinkButton>
 			</div>
 			<div class="col">
-				<LinkButton href="#who" classes="px-1 px-md-3">Who&nbsp;we&nbsp;are</LinkButton>
+				<LinkButton href="/#who" classes="px-1 px-md-3">Who&nbsp;we&nbsp;are</LinkButton>
 			</div>
 			<div class="col">
 				<LinkButton href="#contact" classes="px-1 px-md-3">Contact</LinkButton>

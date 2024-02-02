@@ -30,6 +30,7 @@
 		background-repeat: no-repeat;
 		background-size: 0% 0%;
 		transition: all 0.4s;
+		cursor: default;
 	}
 
 	.corner {
