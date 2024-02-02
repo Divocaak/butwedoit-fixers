@@ -94,16 +94,16 @@
 	</div>
 	<h2 class="unbounded text-center display-4 mt-5 pt-5" id="offer">WHAT WE OFFER AS FIXERS</h2>
 	<p class="roboto text-center py-4 fw-light">
-		Local production service on Czech Republic / Slovakia / Austria & throughout Europe
+		Local production service in the Czech Republic / Slovakia / Austria & throughout Europe
 	</p>
 	<div class="grid-container pb-5 px-3 px-md-0">
 		<ActivityBox value="HIRING HIGH QUALITY CREWS" />
 		<ActivityBox value="LOCATION SCOUTING AND RESEARCH" />
 		<ActivityBox value="LOCATION CLEARANCES AND RELEASES" />
-		<ActivityBox value="SECURING SHOOTING PERMITS" />
-		<ActivityBox value="COMMUNICATIONS WITH " />
-		<ActivityBox value="LOCAL AUTHORITIES" />
-		<ActivityBox value="PRODUCTION SCHEDULING, BUDGETING & LOGISTICS " />
+		<ActivityBox value="SHOOTING PERMITS SECURING" />
+		<ActivityBox value="COMMUNICATIONS WITH LOCAL AUTHORITIES" />
+		<ActivityBox value="COSTUME & WARDROBE SERVICES" />
+		<ActivityBox value="PRODUCTION SCHEDULING, BUDGETING & LOGISTICS" />
 		<ActivityBox value="STUDIOS" />
 		<ActivityBox value="GEAR RENTAL" />
 		<ActivityBox value="DRONE RENTAL" />
@@ -112,7 +112,7 @@
 		<ActivityBox value="CASTING AND BOOKING" />
 		<ActivityBox value="HOTEL BOOKINGS" />
 		<ActivityBox value="ON SET TRANSLATION" />
-		<ActivityBox value="SECURING ART DEPARTMENT, HAIR MAKEUP ETC" />
+		<ActivityBox value="SECURING ART DEPARTMENT, HAIR AND MAKEUP" />
 	</div>
 </ContentWrapper>
 <ContentWrapper blackOnWhite={true}>
