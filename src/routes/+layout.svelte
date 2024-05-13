@@ -1,3 +1,7 @@
+<script>
+	import Analytics from '$lib/Analytics.svelte';
+</script>
+
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,6 +33,7 @@
 </svelte:head>
 
 <slot />
+<Analytics />
 
 <style lang="scss">
 	:root {
