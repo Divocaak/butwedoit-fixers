@@ -9,7 +9,6 @@
 	export let offsetYSm = 0;
 
 	const src = {
-		img: { src: path, w: 1920, h: 1080 },
 		sources: {
 			webp: [
 				{ src: path, w: 1920 },
@@ -21,7 +20,8 @@
 				{ src: path, w: 1024 },
 				{ src: path, w: 480 }
 			]
-		}
+		},
+		img: { src: path, w: 1920, h: 1080 }
 	};
 
 	let ref, loaded;
@@ -36,14 +36,14 @@
 <svelte:window bind:innerWidth/>
 
 <div class="wrap">
-	<Img
+	<!-- <Img
 		{src}
 		{alt}
 		class="my-img offsetter {additionalClasses}"
 		style="top:{condition ? offsetYSm : offsetY}px; "
 		bind:ref
 		on:load={() => (loaded = true)}
-	/>
+	/> -->
 	<div class="blur" class:loaded />
 </div>
 
