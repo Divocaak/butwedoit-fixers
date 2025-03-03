@@ -10,16 +10,7 @@
 
 	const src = {
 		sources: {
-			webp: [
-				{ src: path, w: 1920 },
-				{ src: path, w: 1024 },
-				{ src: path, w: 480 }
-			],
-			jpeg: [
-				{ src: path, w: 1920 },
-				{ src: path, w: 1024 },
-				{ src: path, w: 480 }
-			]
+			jpeg:`${path} 1920w, ${path} 1024w, ${path} 480w`
 		},
 		img: { src: path, w: 1920, h: 1080 }
 	};
@@ -36,14 +27,14 @@
 <svelte:window bind:innerWidth/>
 
 <div class="wrap">
-	<!-- <Img
+	<Img
 		{src}
 		{alt}
 		class="my-img offsetter {additionalClasses}"
 		style="top:{condition ? offsetYSm : offsetY}px; "
 		bind:ref
 		on:load={() => (loaded = true)}
-	/> -->
+	/>
 	<div class="blur" class:loaded />
 </div>
 

@@ -38,6 +38,14 @@
 		<p class="unbounded lead me-3">POWERED BY</p>
 		<img alt="butwedoit logo" src="/logo_bwd.png" />
 	</a>
+	<form action="https://api.staticforms.xyz/submit" method="post">
+		
+		<input type="hidden" name="accessKey" value="e44fc5d0-0b52-4cb1-9f79-fefc3800d89c">
+        <input type="text" name="honeypot" style="display: none;">
+
+		<input type="email" class="montserrat" name="email" required placeholder="more information: email">
+		<button type="submit">submit</button>
+	</form>
 </HeaderWrapper>
 <ContentWrapper gradient={true} noPadding={true}>
 	<div class="row mt-5 py-5 px-3 px-md-5" id="info">
@@ -172,6 +180,41 @@
 
 	#info {
 		z-index: 10;
+	}
+
+	form{
+		position: relative;
+		z-index: 10;
+		text-align: center;
+		width: 50%;
+		margin: auto;
+	}
+	
+	form button{
+		all:unset;
+		background: var(--yellow);
+		color: var(--black);
+	}
+
+	form input, form button{
+		padding: 1rem 2rem;
+		border: solid 2px var(--yellow);
+		text-transform: uppercase	;
+		font-family: 'Unbounded', cursive;
+	}
+	
+	form input{
+		background-color: transparent;
+		width:60%;
+		color: var(--white);
+	}
+
+	form input:focus{
+		border: 1px solid var(--primary);
+	}
+	
+	form input::placeholder{
+		color: var(--yellow);
 	}
 
 	/* Media query for screens smaller than 768px (e.g., smartphones) */
