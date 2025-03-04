@@ -6,6 +6,7 @@
 	import Card from '$lib/Card.svelte';
 	import HomeMap from '$lib/maps/HomeMap.svelte';
 	import FramedButton from '$lib/FramedButton.svelte';
+	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -38,6 +39,21 @@
 		<p class="unbounded lead me-3">POWERED BY</p>
 		<img alt="butwedoit logo" src="/logo_bwd.png" />
 	</a>
+	<div class="form-wrapper">
+		<form action="https://api.staticforms.xyz/submit" method="post">
+			<input type="hidden" name="accessKey" value="e2895bab-92ae-40ff-85b5-a3b5835d66ac" />
+			<input type="text" name="honeypot" style="display: none;" />
+			<input type="hidden" name="redirectTo" value="{$page.url.href}" />
+			<input
+				type="email"
+				class="montserrat"
+				name="email"
+				required
+				placeholder="more information: email"
+			/>
+			<button type="submit">submit</button>
+		</form>
+	</div>
 </HeaderWrapper>
 <ContentWrapper gradient={true} noPadding={true}>
 	<div class="row mt-5 py-5 px-3 px-md-5" id="info">
@@ -174,6 +190,60 @@
 		z-index: 10;
 	}
 
+	.form-wrapper {
+		position: relative;
+		width: 100%;
+		height: 90%;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	form {
+		position: absolute;
+		bottom: 0;
+		z-index: 10;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+
+	form button {
+		all: unset;
+		background: var(--yellow);
+		color: var(--black);
+		transition: all 0.1s ease-in-out;
+		cursor: pointer;
+	}
+
+	form button:hover {
+		background-color: var(--white);
+		border: solid 2px var(--white);
+	}
+
+	form input,
+	form button {
+		padding: 1rem 2rem;
+		border: solid 2px var(--yellow);
+		text-transform: uppercase;
+		font-family: 'Unbounded', cursive;
+		pointer-events: all;
+	}
+
+	form input {
+		background-color: transparent;
+		width: 40%;
+		color: var(--white);
+		transition: all 0.1s ease-in-out;
+	}
+
+	form input[type='email']:focus {
+		outline: 2px solid var(--yellow);
+	}
+
+	form input::placeholder {
+		color: var(--yellow);
+	}
+
 	/* Media query for screens smaller than 768px (e.g., smartphones) */
 	@media screen and (max-width: 767px) {
 		.grid-container {
@@ -182,6 +252,15 @@
 
 		.map-overlay-container {
 			top: 150px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		form input {
+			width: 100%;
 		}
 	}
 

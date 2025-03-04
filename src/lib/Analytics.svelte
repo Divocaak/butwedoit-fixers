@@ -63,5 +63,6 @@
 		} catch (err) {
 			console.log('Error setting up google analytics ', err);
 		}
-	</script>
+
+		</script>
 </svelte:head>

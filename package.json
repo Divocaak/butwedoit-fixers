@@ -9,7 +9,7 @@
 		"test": "playwright test",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"start": "HOST=127.0.0.1 PORT=3005 node build"
+		"start": "HOST=127.0.0.1 PORT=3007 node build"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
