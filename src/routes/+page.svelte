@@ -7,6 +7,17 @@
 	import HomeMap from '$lib/maps/HomeMap.svelte';
 	import FramedButton from '$lib/FramedButton.svelte';
 	import { page } from '$app/stores';
+	/* import { analyticsStore } from '$lib/stores/analyticsStore.js';
+
+	const submitHandler = async () => {
+		analyticsStore.update((existing_events) => [
+			...existing_events,
+			{
+				id: 'form_sent',
+				type: 'event'
+			}
+		]);
+	}; */
 </script>
 
 <svelte:head>
@@ -41,9 +52,10 @@
 	</a>
 	<div class="form-wrapper">
 		<form action="https://api.staticforms.xyz/submit" method="post">
+			<!-- <form action="https://api.staticforms.xyz/submit" method="post" on:submit|preventDefault={submitHandler}> -->
 			<input type="hidden" name="accessKey" value="e2895bab-92ae-40ff-85b5-a3b5835d66ac" />
 			<input type="text" name="honeypot" style="display: none;" />
-			<input type="hidden" name="redirectTo" value="{$page.url.href}" />
+			<input type="hidden" name="redirectTo" value={$page.url.href} />
 			<input
 				type="email"
 				class="montserrat"
@@ -257,6 +269,7 @@
 		form {
 			display: flex;
 			flex-direction: column;
+			bottom: 10%;
 		}
 
 		form input {
