@@ -63,7 +63,6 @@
 
 	.country:hover ~ .label {
 		opacity: 1;
-        /* NOTE if this color option passes by client, set color to white by default and remove the option to invert (texts in ocean) */
         color: var(--white);
 	}
 
