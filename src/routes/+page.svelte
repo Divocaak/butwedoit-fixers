@@ -234,11 +234,13 @@
 
 	form input,
 	form button {
-		padding: 1rem 2rem;
+		padding: .8rem 2rem;
 		border: solid 2px var(--yellow);
 		text-transform: uppercase;
 		font-family: 'Unbounded', cursive;
 		pointer-events: all;
+		font-size: 1rem;
+		line-height: 1rem;
 	}
 
 	form input {
@@ -274,6 +276,12 @@
 
 		form input {
 			width: 100%;
+		}
+
+		form input, form button{
+			text-align: center;
+			font-size: .9rem;
+			line-height: .8rem;
 		}
 	}
 
