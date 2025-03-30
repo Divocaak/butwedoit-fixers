@@ -55,12 +55,13 @@
 			<!-- <form action="https://api.staticforms.xyz/submit" method="post" on:submit|preventDefault={submitHandler}> -->
 			<input type="hidden" name="accessKey" value="e2895bab-92ae-40ff-85b5-a3b5835d66ac" />
 			<input type="text" name="honeypot" style="display: none;" />
+			<div class="g-recaptcha" data-sitekey="6Lcn5wIrAAAAABYQX58CrdmpWc9VUoxea0L4xRBX"></div>
 			<input type="hidden" name="redirectTo" value={$page.url.href} />
 			<input
 				type="email"
 				class="montserrat"
 				name="email"
-				required
+				required		
 				placeholder="more information: email"
 			/>
 			<button type="submit">submit</button>
