@@ -7,6 +7,7 @@
 	import HomeMap from '$lib/maps/HomeMap.svelte';
 	import FramedButton from '$lib/FramedButton.svelte';
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 	/* import { analyticsStore } from '$lib/stores/analyticsStore.js';
 
 	const submitHandler = async () => {
@@ -18,6 +19,16 @@
 			}
 		]);
 	}; */
+
+	onMount(() => {
+		if (typeof window !== 'undefined' && !window.grecaptcha) {
+			const script = document.createElement('script');
+			script.src = 'https://www.google.com/recaptcha/api.js';
+			script.async = true;
+			script.defer = true;
+			document.head.appendChild(script);
+		}
+	});
 </script>
 
 <svelte:head>
@@ -64,6 +75,11 @@
 				placeholder="more information: email"
 			/>
 			<button type="submit">submit</button>
+			<div
+				class="g-recaptcha"
+				id="g-racaptcha-staticforms"
+				data-sitekey="6Lcn5wIrAAAAABYQX58CrdmpWc9VUoxea0L4xRBX"
+			/>
 		</form>
 	</div>
 </HeaderWrapper>
@@ -234,11 +250,13 @@
 
 	form input,
 	form button {
-		padding: 1rem 2rem;
+		padding: 0.8rem 2rem;
 		border: solid 2px var(--yellow);
 		text-transform: uppercase;
 		font-family: 'Unbounded', cursive;
 		pointer-events: all;
+		font-size: 1rem;
+		line-height: 1rem;
 	}
 
 	form input {
@@ -254,6 +272,15 @@
 
 	form input::placeholder {
 		color: var(--yellow);
+	}
+
+	form #g-racaptcha-staticforms {
+		transform: scale(0.7);
+		pointer-events: all !important;
+		position: absolute;
+		width: min-content;
+		bottom: -10px;
+		right: -10px;
 	}
 
 	/* Media query for screens smaller than 768px (e.g., smartphones) */
@@ -274,6 +301,19 @@
 
 		form input {
 			width: 100%;
+		}
+
+		form input,
+		form button {
+			text-align: center;
+			font-size: 0.9rem;
+			line-height: 0.8rem;
+		}
+
+		form #g-racaptcha-staticforms {
+			position: absolute;
+			bottom: -70px;
+			right: 0px;
 		}
 	}
 
