@@ -313,8 +313,7 @@
 		form #g-racaptcha-staticforms {
 			position: absolute;
 			bottom: -70px;
-			margin: auto auto;
-			width: 100%;
+			left: 0;
 		}
 	}
 
