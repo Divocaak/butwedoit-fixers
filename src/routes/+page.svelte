@@ -296,7 +296,7 @@
 		form {
 			display: flex;
 			flex-direction: column;
-			bottom: 10%;
+			bottom: 20%;
 		}
 
 		form input {
@@ -313,7 +313,7 @@
 		form #g-racaptcha-staticforms {
 			position: absolute;
 			bottom: -70px;
-			right: 0px;
+			left: 0;
 		}
 	}
 

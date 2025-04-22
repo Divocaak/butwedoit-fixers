@@ -229,12 +229,12 @@
 	/* Media query for screens smaller than 768px (e.g., smartphones) */
 	@media screen and (max-width: 767px) {
 		.map-parent::before {
-			top: 60%;
+			top: 50%;
 			left: 52%;
 		}
 
 		.map-parent::after {
-			top: 60%;
+			top: 50%;
 			left: 90%;
 		}
 
