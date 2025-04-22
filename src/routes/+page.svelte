@@ -296,7 +296,7 @@
 		form {
 			display: flex;
 			flex-direction: column;
-			bottom: 10%;
+			bottom: 20%;
 		}
 
 		form input {
